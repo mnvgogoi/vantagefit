@@ -16,6 +16,16 @@
 		52A3DB3E289A37350094671D /* Vantage_FitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB3D289A37350094671D /* Vantage_FitTests.swift */; };
 		52A3DB48289A37350094671D /* Vantage_FitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB47289A37350094671D /* Vantage_FitUITests.swift */; };
 		52A3DB4A289A37350094671D /* Vantage_FitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB49289A37350094671D /* Vantage_FitUITestsLaunchTests.swift */; };
+		52A3DB58289A75830094671D /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB56289A75830094671D /* TableViewHeader.swift */; };
+		52A3DB59289A75830094671D /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB57289A75830094671D /* TableViewHeader.xib */; };
+		52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */; };
+		52A3DB5D289A77EA0094671D /* TableViewFooterBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */; };
+		52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB5E289A795F0094671D /* TableViewDOB.swift */; };
+		52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB5F289A795F0094671D /* TableViewDOB.xib */; };
+		52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */; };
+		52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */; };
+		52A3DB68289A80130094671D /* TableViewGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB66289A80130094671D /* TableViewGender.swift */; };
+		52A3DB69289A80130094671D /* TableViewGender.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB67289A80130094671D /* TableViewGender.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		52A3DB43289A37350094671D /* Vantage FitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vantage FitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3DB47289A37350094671D /* Vantage_FitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vantage_FitUITests.swift; sourceTree = "<group>"; };
 		52A3DB49289A37350094671D /* Vantage_FitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vantage_FitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52A3DB56289A75830094671D /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		52A3DB57289A75830094671D /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFooterBtn.swift; sourceTree = "<group>"; };
+		52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewFooterBtn.xib; sourceTree = "<group>"; };
+		52A3DB5E289A795F0094671D /* TableViewDOB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDOB.swift; sourceTree = "<group>"; };
+		52A3DB5F289A795F0094671D /* TableViewDOB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDOB.xib; sourceTree = "<group>"; };
+		52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightWeight.swift; sourceTree = "<group>"; };
+		52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeightWeight.xib; sourceTree = "<group>"; };
+		52A3DB66289A80130094671D /* TableViewGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewGender.swift; sourceTree = "<group>"; };
+		52A3DB67289A80130094671D /* TableViewGender.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewGender.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +126,16 @@
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
 				52A3DB34289A37350094671D /* Info.plist */,
+				52A3DB56289A75830094671D /* TableViewHeader.swift */,
+				52A3DB57289A75830094671D /* TableViewHeader.xib */,
+				52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */,
+				52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */,
+				52A3DB5E289A795F0094671D /* TableViewDOB.swift */,
+				52A3DB5F289A795F0094671D /* TableViewDOB.xib */,
+				52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */,
+				52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */,
+				52A3DB66289A80130094671D /* TableViewGender.swift */,
+				52A3DB67289A80130094671D /* TableViewGender.xib */,
 			);
 			path = "Vantage Fit";
 			sourceTree = "<group>";
@@ -231,7 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A3DB59289A75830094671D /* TableViewHeader.xib in Resources */,
+				52A3DB5D289A77EA0094671D /* TableViewFooterBtn.xib in Resources */,
 				52A3DB33289A37350094671D /* LaunchScreen.storyboard in Resources */,
+				52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */,
+				52A3DB69289A80130094671D /* TableViewGender.xib in Resources */,
+				52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */,
 				52A3DB30289A37350094671D /* Assets.xcassets in Resources */,
 				52A3DB2E289A37330094671D /* Main.storyboard in Resources */,
 			);
@@ -258,9 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A3DB68289A80130094671D /* TableViewGender.swift in Sources */,
+				52A3DB58289A75830094671D /* TableViewHeader.swift in Sources */,
 				52A3DB2B289A37330094671D /* ViewController.swift in Sources */,
 				52A3DB27289A37330094671D /* AppDelegate.swift in Sources */,
+				52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */,
+				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
+				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
