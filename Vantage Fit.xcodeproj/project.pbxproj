@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521D1E2C289B99C200EF707F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D1E2B289B99C200EF707F /* DetailsViewController.swift */; };
 		52A3DB27289A37330094671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB26289A37330094671D /* AppDelegate.swift */; };
 		52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB28289A37330094671D /* SceneDelegate.swift */; };
 		52A3DB2B289A37330094671D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB2A289A37330094671D /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521D1E2B289B99C200EF707F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		52A3DB23289A37330094671D /* Vantage Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vantage Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3DB26289A37330094671D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A3DB28289A37330094671D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		528EE04D289B83E100AD9D13 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				52A3DB56289A75830094671D /* TableViewHeader.swift */,
+				52A3DB57289A75830094671D /* TableViewHeader.xib */,
+				52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */,
+				52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */,
+				52A3DB5E289A795F0094671D /* TableViewDOB.swift */,
+				52A3DB5F289A795F0094671D /* TableViewDOB.xib */,
+				52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */,
+				52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */,
+				52A3DB66289A80130094671D /* TableViewGender.swift */,
+				52A3DB67289A80130094671D /* TableViewGender.xib */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
 		52A3DB1A289A37330094671D = {
 			isa = PBXGroup;
 			children = (
@@ -122,20 +141,12 @@
 				52A3DB26289A37330094671D /* AppDelegate.swift */,
 				52A3DB28289A37330094671D /* SceneDelegate.swift */,
 				52A3DB2A289A37330094671D /* ViewController.swift */,
+				521D1E2B289B99C200EF707F /* DetailsViewController.swift */,
 				52A3DB2C289A37330094671D /* Main.storyboard */,
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
 				52A3DB34289A37350094671D /* Info.plist */,
-				52A3DB56289A75830094671D /* TableViewHeader.swift */,
-				52A3DB57289A75830094671D /* TableViewHeader.xib */,
-				52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */,
-				52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */,
-				52A3DB5E289A795F0094671D /* TableViewDOB.swift */,
-				52A3DB5F289A795F0094671D /* TableViewDOB.xib */,
-				52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */,
-				52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */,
-				52A3DB66289A80130094671D /* TableViewGender.swift */,
-				52A3DB67289A80130094671D /* TableViewGender.xib */,
+				528EE04D289B83E100AD9D13 /* others */,
 			);
 			path = "Vantage Fit";
 			sourceTree = "<group>";
@@ -295,6 +306,7 @@
 			files = (
 				52A3DB68289A80130094671D /* TableViewGender.swift in Sources */,
 				52A3DB58289A75830094671D /* TableViewHeader.swift in Sources */,
+				521D1E2C289B99C200EF707F /* DetailsViewController.swift in Sources */,
 				52A3DB2B289A37330094671D /* ViewController.swift in Sources */,
 				52A3DB27289A37330094671D /* AppDelegate.swift in Sources */,
 				52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */,
