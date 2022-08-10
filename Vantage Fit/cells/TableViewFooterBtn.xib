@@ -10,15 +10,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="TableViewFooterBtn" customModule="Vantage_Fit" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="359" height="105"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="TableViewFooterBtn" customModule="Vantage_Fit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="359" height="105"/>
+                <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9q-hj-Qwt">
-                        <rect key="frame" x="15" y="21" width="329" height="62"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9q-hj-Qwt">
+                        <rect key="frame" x="20" y="6.5" width="302" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="I0Z-Oz-XKh"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Continue">
                             <backgroundConfiguration key="background" cornerRadius="20">
@@ -27,15 +30,23 @@
                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                             <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="continueBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VJF-51-LQJ"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="h9q-hj-Qwt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dGA-d0-DBA"/>
-                    <constraint firstItem="h9q-hj-Qwt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="uuX-Rm-NPc"/>
+                    <constraint firstAttribute="trailing" secondItem="h9q-hj-Qwt" secondAttribute="trailing" constant="20" id="Pyj-BB-fIr"/>
+                    <constraint firstItem="h9q-hj-Qwt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SYu-xE-ZSC"/>
+                    <constraint firstItem="h9q-hj-Qwt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YZ4-0e-arU"/>
+                    <constraint firstItem="h9q-hj-Qwt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pJb-6j-hCQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="165.94202898550725" y="89.397321428571431"/>
+            <connections>
+                <outlet property="continueBtn" destination="h9q-hj-Qwt" id="cuX-bc-GwB"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="75.334821428571431"/>
         </tableViewCell>
     </objects>
     <resources>

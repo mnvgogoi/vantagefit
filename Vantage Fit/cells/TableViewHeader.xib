@@ -16,15 +16,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="370" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s setup your data, User" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O2-q7-Uqv">
-                        <rect key="frame" x="42" y="42" width="286.5" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s setup your data, User" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O2-q7-Uqv">
+                        <rect key="frame" x="42" y="23" width="286" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="OAI-wx-z8Z"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                         <color key="textColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="3O2-q7-Uqv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="C1t-Oz-Osj"/>
                     <constraint firstItem="3O2-q7-Uqv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HuH-DQ-LCN"/>
+                    <constraint firstAttribute="trailing" secondItem="3O2-q7-Uqv" secondAttribute="trailing" constant="42" id="OUg-sW-kd1"/>
                     <constraint firstItem="3O2-q7-Uqv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aye-dM-wff"/>
                 </constraints>
             </tableViewCellContentView>
@@ -32,7 +37,7 @@
             <connections>
                 <outlet property="topLabel" destination="3O2-q7-Uqv" id="chv-KM-597"/>
             </connections>
-            <point key="canvasLocation" x="191.30434782608697" y="132.92410714285714"/>
+            <point key="canvasLocation" x="360.86956521739131" y="104.79910714285714"/>
         </tableViewCell>
     </objects>
 </document>
