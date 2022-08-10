@@ -1,13 +1,13 @@
 //
-//  SliderWeightViewController.swift
+//  WeightViewController.swift
 //  Vantage Fit
 //
-//  Created by Vantage Circle on 09/08/22.
+//  Created by Vantage Circle on 10/08/22.
 //
 
 import UIKit
 
-class SliderWeightViewController: UIViewController {
+class WeightViewController: UIViewController {
 
     @IBOutlet weak var popUpCard: UIView!
     @IBOutlet weak var popUpLabel: UILabel!
@@ -40,4 +40,6 @@ class SliderWeightViewController: UIViewController {
         
     }
     
+
+
 }

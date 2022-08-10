@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		521D1E2C289B99C200EF707F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D1E2B289B99C200EF707F /* DetailsViewController.swift */; };
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
-		5271C7BA28A22F6300278C68 /* SliderWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B928A22F6300278C68 /* SliderWeightViewController.swift */; };
-		528D99E528A0E15E00C37A1D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D99E428A0E15E00C37A1D /* PopUpViewController.swift */; };
-		528D99E728A117F500C37A1D /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D99E628A117F500C37A1D /* SliderViewController.swift */; };
+		5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAC628A3C1D300139DD3 /* TableViewController.swift */; };
+		5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAC728A3C1D300139DD3 /* TableViewController.xib */; };
+		5290EACC28A3C30100139DD3 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EACA28A3C30100139DD3 /* CalenderViewController.swift */; };
+		5290EACD28A3C30100139DD3 /* CalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EACB28A3C30100139DD3 /* CalenderViewController.xib */; };
+		5290EAD128A3C59A00139DD3 /* HeightSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EACF28A3C59A00139DD3 /* HeightSliderViewController.swift */; };
+		5290EAD228A3C59A00139DD3 /* HeightSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAD028A3C59A00139DD3 /* HeightSliderViewController.xib */; };
+		5290EAD628A3C76000139DD3 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAD428A3C76000139DD3 /* WeightViewController.swift */; };
+		5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAD528A3C76000139DD3 /* WeightViewController.xib */; };
 		5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292F5A6289BD35B00221F36 /* radioBtnController.swift */; };
 		52A3DB27289A37330094671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB26289A37330094671D /* AppDelegate.swift */; };
 		52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB28289A37330094671D /* SceneDelegate.swift */; };
@@ -52,11 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		521D1E2B289B99C200EF707F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		5271C7B928A22F6300278C68 /* SliderWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderWeightViewController.swift; sourceTree = "<group>"; };
-		528D99E428A0E15E00C37A1D /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		528D99E628A117F500C37A1D /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		5290EAC628A3C1D300139DD3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5290EAC728A3C1D300139DD3 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		5290EACA28A3C30100139DD3 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		5290EACB28A3C30100139DD3 /* CalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderViewController.xib; sourceTree = "<group>"; };
+		5290EACF28A3C59A00139DD3 /* HeightSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightSliderViewController.swift; sourceTree = "<group>"; };
+		5290EAD028A3C59A00139DD3 /* HeightSliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeightSliderViewController.xib; sourceTree = "<group>"; };
+		5290EAD428A3C76000139DD3 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		5290EAD528A3C76000139DD3 /* WeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightViewController.xib; sourceTree = "<group>"; };
 		5292F5A6289BD35B00221F36 /* radioBtnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioBtnController.swift; sourceTree = "<group>"; };
 		52A3DB23289A37330094671D /* Vantage Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vantage Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3DB26289A37330094671D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,33 +116,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		528EE04D289B83E100AD9D13 /* cells */ = {
+		528EE04D289B83E100AD9D13 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
-				52A3DB56289A75830094671D /* TableViewHeader.swift */,
-				52A3DB57289A75830094671D /* TableViewHeader.xib */,
-				52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */,
-				52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */,
-				52A3DB5E289A795F0094671D /* TableViewDOB.swift */,
-				52A3DB5F289A795F0094671D /* TableViewDOB.xib */,
-				52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */,
-				52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */,
-				52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */,
-				52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */,
+				5290EAC028A3C14F00139DD3 /* Table Header */,
+				5290EAC128A3C16000139DD3 /* Table Footer Btn */,
+				5290EAC228A3C17100139DD3 /* Table Dob */,
+				5290EAC328A3C18500139DD3 /* Table Height Weight */,
+				5290EAC428A3C19700139DD3 /* Table Gender */,
 			);
-			path = cells;
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 		5290EABE28A3798200139DD3 /* others */ = {
 			isa = PBXGroup;
 			children = (
 				5292F5A6289BD35B00221F36 /* radioBtnController.swift */,
-				528D99E428A0E15E00C37A1D /* PopUpViewController.swift */,
-				528D99E628A117F500C37A1D /* SliderViewController.swift */,
 				5271C7B728A225C800278C68 /* Global.swift */,
-				5271C7B928A22F6300278C68 /* SliderWeightViewController.swift */,
 			);
 			path = others;
+			sourceTree = "<group>";
+		};
+		5290EAC028A3C14F00139DD3 /* Table Header */ = {
+			isa = PBXGroup;
+			children = (
+				52A3DB56289A75830094671D /* TableViewHeader.swift */,
+				52A3DB57289A75830094671D /* TableViewHeader.xib */,
+			);
+			path = "Table Header";
+			sourceTree = "<group>";
+		};
+		5290EAC128A3C16000139DD3 /* Table Footer Btn */ = {
+			isa = PBXGroup;
+			children = (
+				52A3DB5A289A77EA0094671D /* TableViewFooterBtn.swift */,
+				52A3DB5B289A77EA0094671D /* TableViewFooterBtn.xib */,
+			);
+			path = "Table Footer Btn";
+			sourceTree = "<group>";
+		};
+		5290EAC228A3C17100139DD3 /* Table Dob */ = {
+			isa = PBXGroup;
+			children = (
+				52A3DB5E289A795F0094671D /* TableViewDOB.swift */,
+				52A3DB5F289A795F0094671D /* TableViewDOB.xib */,
+			);
+			path = "Table Dob";
+			sourceTree = "<group>";
+		};
+		5290EAC328A3C18500139DD3 /* Table Height Weight */ = {
+			isa = PBXGroup;
+			children = (
+				52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */,
+				52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */,
+			);
+			path = "Table Height Weight";
+			sourceTree = "<group>";
+		};
+		5290EAC428A3C19700139DD3 /* Table Gender */ = {
+			isa = PBXGroup;
+			children = (
+				52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */,
+				52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */,
+			);
+			path = "Table Gender";
+			sourceTree = "<group>";
+		};
+		5290EAC528A3C1B600139DD3 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				5290EAC628A3C1D300139DD3 /* TableViewController.swift */,
+				5290EAC728A3C1D300139DD3 /* TableViewController.xib */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		5290EACE28A3C3F500139DD3 /* CalenderVC */ = {
+			isa = PBXGroup;
+			children = (
+				5290EACA28A3C30100139DD3 /* CalenderViewController.swift */,
+				5290EACB28A3C30100139DD3 /* CalenderViewController.xib */,
+			);
+			path = CalenderVC;
+			sourceTree = "<group>";
+		};
+		5290EAD328A3C74100139DD3 /* Height Slider VC */ = {
+			isa = PBXGroup;
+			children = (
+				5290EACF28A3C59A00139DD3 /* HeightSliderViewController.swift */,
+				5290EAD028A3C59A00139DD3 /* HeightSliderViewController.xib */,
+			);
+			path = "Height Slider VC";
+			sourceTree = "<group>";
+		};
+		5290EAD828A3C81E00139DD3 /* Weight Slider VC */ = {
+			isa = PBXGroup;
+			children = (
+				5290EAD428A3C76000139DD3 /* WeightViewController.swift */,
+				5290EAD528A3C76000139DD3 /* WeightViewController.xib */,
+			);
+			path = "Weight Slider VC";
 			sourceTree = "<group>";
 		};
 		52A3DB1A289A37330094671D = {
@@ -160,15 +241,18 @@
 		52A3DB25289A37330094671D /* Vantage Fit */ = {
 			isa = PBXGroup;
 			children = (
+				5290EAC528A3C1B600139DD3 /* Table */,
+				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
+				5290EAD328A3C74100139DD3 /* Height Slider VC */,
+				5290EACE28A3C3F500139DD3 /* CalenderVC */,
 				52A3DB26289A37330094671D /* AppDelegate.swift */,
 				52A3DB28289A37330094671D /* SceneDelegate.swift */,
 				52A3DB2A289A37330094671D /* ViewController.swift */,
-				521D1E2B289B99C200EF707F /* DetailsViewController.swift */,
 				52A3DB2C289A37330094671D /* Main.storyboard */,
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
 				52A3DB34289A37350094671D /* Info.plist */,
-				528EE04D289B83E100AD9D13 /* cells */,
+				528EE04D289B83E100AD9D13 /* Table Cells */,
 				5290EABE28A3798200139DD3 /* others */,
 			);
 			path = "Vantage Fit";
@@ -295,12 +379,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5290EACD28A3C30100139DD3 /* CalenderViewController.xib in Resources */,
 				52A3DB59289A75830094671D /* TableViewHeader.xib in Resources */,
 				52CD2A95289CF627006CE4AC /* TableViewGendertwo.xib in Resources */,
 				52A3DB5D289A77EA0094671D /* TableViewFooterBtn.xib in Resources */,
 				52A3DB33289A37350094671D /* LaunchScreen.storyboard in Resources */,
 				52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */,
 				52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */,
+				5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */,
+				5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */,
+				5290EAD228A3C59A00139DD3 /* HeightSliderViewController.xib in Resources */,
 				52A3DB30289A37350094671D /* Assets.xcassets in Resources */,
 				52A3DB2E289A37330094671D /* Main.storyboard in Resources */,
 			);
@@ -327,19 +415,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5271C7BA28A22F6300278C68 /* SliderWeightViewController.swift in Sources */,
+				5290EAD628A3C76000139DD3 /* WeightViewController.swift in Sources */,
+				5290EAD128A3C59A00139DD3 /* HeightSliderViewController.swift in Sources */,
 				52A3DB58289A75830094671D /* TableViewHeader.swift in Sources */,
-				521D1E2C289B99C200EF707F /* DetailsViewController.swift in Sources */,
 				52A3DB2B289A37330094671D /* ViewController.swift in Sources */,
-				528D99E728A117F500C37A1D /* SliderViewController.swift in Sources */,
+				5290EACC28A3C30100139DD3 /* CalenderViewController.swift in Sources */,
 				52A3DB27289A37330094671D /* AppDelegate.swift in Sources */,
 				5271C7B828A225C800278C68 /* Global.swift in Sources */,
 				52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */,
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
-				528D99E528A0E15E00C37A1D /* PopUpViewController.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
+				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,
 				52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

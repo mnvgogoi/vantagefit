@@ -1,13 +1,13 @@
 //
-//  SliderViewController.swift
+//  HeightSliderViewController.swift
 //  Vantage Fit
 //
-//  Created by Vantage Circle on 08/08/22.
+//  Created by Vantage Circle on 10/08/22.
 //
 
 import UIKit
 
-class SliderViewController: UIViewController {
+class HeightSliderViewController: UIViewController {
 
     @IBOutlet weak var popUpBackground: UIView!
     @IBOutlet weak var popUpLabel: UILabel!
@@ -49,18 +49,21 @@ class SliderViewController: UIViewController {
 
 // MARK: - custom slider
 
-open class CustomSlider : UISlider {
-    @IBInspectable open var trackWidth:CGFloat = 2 {
-        didSet {setNeedsDisplay()}
-    }
-
-    override open func trackRect(forBounds bounds: CGRect) -> CGRect {
-        let defaultBounds = super.trackRect(forBounds: bounds)
-        return CGRect(
-            x: defaultBounds.origin.x,
-            y: defaultBounds.origin.y + defaultBounds.size.height/2 - trackWidth/2,
-            width: defaultBounds.size.width,
-            height: trackWidth
-        )
-    }
-}
+//open class CustomSlider : UISlider {
+//    @IBInspectable open var trackWidth:CGFloat = 2 {
+//        didSet {setNeedsDisplay()}
+//    }
+//
+//    override open func trackRect(forBounds bounds: CGRect) -> CGRect {
+//        let defaultBounds = super.trackRect(forBounds: bounds)
+//        return CGRect(
+//            x: defaultBounds.origin.x,
+//            y: defaultBounds.origin.y + defaultBounds.size.height/2 - trackWidth/2,
+//            width: defaultBounds.size.width,
+//            height: trackWidth
+//        )
+//    }
+//
+//
+//
+//}

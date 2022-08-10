@@ -1,14 +1,14 @@
 //
-//  PopUpViewController.swift
+//  CalenderViewController.swift
 //  Vantage Fit
 //
-//  Created by Vantage Circle on 08/08/22.
+//  Created by Vantage Circle on 10/08/22.
 //
 
 import UIKit
 
-class PopUpViewController: UIViewController {
-
+class CalenderViewController: UIViewController {
+    
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var setDateBtn: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -49,3 +49,8 @@ class PopUpViewController: UIViewController {
 //        dismiss(animated: true,completion: nil)
     }
 }
+
+
+
+
+
