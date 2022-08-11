@@ -48,35 +48,30 @@ class TableViewGendertwo: UITableViewCell {
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "Male"
-            Global.gender = genderValue
         case 2:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = true
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "Female"
-            Global.gender = genderValue
         case 3:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = true
             self.noDiscloseBtn.isSelected = false
             genderValue = "Others"
-            Global.gender = genderValue
         case 4:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = true
             genderValue = "Not Disclosed"
-            Global.gender = genderValue
         default:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "No Value"
-            Global.gender = genderValue
         }
     }
     

@@ -121,9 +121,9 @@
 			children = (
 				5290EAC028A3C14F00139DD3 /* Table Header */,
 				5290EAC128A3C16000139DD3 /* Table Footer Btn */,
+				5290EAC428A3C19700139DD3 /* Table Gender */,
 				5290EAC228A3C17100139DD3 /* Table Dob */,
 				5290EAC328A3C18500139DD3 /* Table Height Weight */,
-				5290EAC428A3C19700139DD3 /* Table Gender */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -242,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				5290EAC528A3C1B600139DD3 /* Table */,
+				528EE04D289B83E100AD9D13 /* Table Cells */,
 				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
 				5290EAD328A3C74100139DD3 /* Height Slider VC */,
 				5290EACE28A3C3F500139DD3 /* CalenderVC */,
@@ -252,7 +253,6 @@
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
 				52A3DB34289A37350094671D /* Info.plist */,
-				528EE04D289B83E100AD9D13 /* Table Cells */,
 				5290EABE28A3798200139DD3 /* others */,
 			);
 			path = "Vantage Fit";

@@ -23,10 +23,25 @@ class CalenderViewController: UIViewController {
         popUpCard.layer.cornerRadius = 20
         datePicker.backgroundColor = .white
         
+        
         dateFormatter.dateFormat = "dd.MM.yy"
         datePicker.datePickerMode = .date
         dob = dateFormatter.string(from: datePicker.date)
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
+        
+        
+        let tableViewDOB = TableViewDOB()
+        tableViewDOB.delegate = self
+        
+        
+//        guard  let tableViewDOB = self.storyboard?.instantiateViewController(withIdentifier: "TableViewDOB") as? TableViewDOB else {
+//               fatalError("View Controller not found")
+//        }
+        
+        
+//        navigationController?.pushViewController(tableCellDOB, animated: true)
+//        present(tableCellDOB, animated: true, completion: nil)
+        
 
     }
     
@@ -50,6 +65,15 @@ class CalenderViewController: UIViewController {
     }
 }
 
+// MARK: -
+
+extension CalenderViewController : CalenderTableViewCellDelegate {
+        func buttonPressed () {
+            print("delegate pressed")
+            let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
+            self.present(calenderViewController, animated: true, completion: nil)
+        }
+}
 
 
 

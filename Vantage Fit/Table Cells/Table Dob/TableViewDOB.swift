@@ -4,6 +4,10 @@
 
 import UIKit
 
+protocol CalenderTableViewCellDelegate {
+func buttonPressed()
+}
+
 class TableViewDOB: UITableViewCell {
     
     @IBOutlet weak var calenderBtn: UIButton!
@@ -11,6 +15,8 @@ class TableViewDOB: UITableViewCell {
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var dobValueLabel: UILabel!
     
+    var delegate: CalenderTableViewCellDelegate?
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +35,13 @@ class TableViewDOB: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    @IBAction func calenderBtnPressed(_ sender: UIButton) {
+        print("pressed")
+        if let calenderDelegate = self.delegate{
+            print("no nill")
+            calenderDelegate.buttonPressed()
+        }
+    }
     
+  
 }

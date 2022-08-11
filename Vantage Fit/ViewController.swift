@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func manualDataPressed(_ sender: UIButton) {
+        //create instance
         let tableViewController = TableViewController(nibName: "TableViewController", bundle: nil)
         //to present a vc
 //        self.present(tableViewController, animated: true, completion: nil)
