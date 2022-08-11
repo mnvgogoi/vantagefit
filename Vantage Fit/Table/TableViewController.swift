@@ -88,6 +88,12 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewHeightWeight", for: indexPath) as? TableViewHeightWeight
             detailsCell?.selectionStyle = .none
             
+            //for height card----
+            detailsCell?.backgroundCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.displaySlider)))
+            //for weight card---
+            detailsCell?.backgroundCardWeight.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.displayWeightSlider)))
+
+            
             return detailsCell ?? UITableViewCell()
         }
         else {
@@ -99,9 +105,20 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     // MARK: - functions
+    
     @objc func calenderButton(sender : UIButton){
         let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
         self.present(calenderViewController, animated: true, completion: nil)
+    }
+    
+    @objc func displaySlider() {
+        let heightSliderViewController = HeightSliderViewController(nibName: "HeightSliderViewController", bundle: nil)
+        self.present(heightSliderViewController, animated: true, completion: nil)
+    }
+    
+    @objc func displayWeightSlider() {
+        let weightViewController = WeightViewController(nibName: "WeightViewController", bundle: nil)
+        self.present(weightViewController, animated: true, completion: nil)
     }
     
 }

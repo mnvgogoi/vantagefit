@@ -28,9 +28,5 @@ class TableViewDOB: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    @IBAction func calenderBtnPressed(_ sender: UIButton) {
-        print("pressed")
-    }
-    
   
 }

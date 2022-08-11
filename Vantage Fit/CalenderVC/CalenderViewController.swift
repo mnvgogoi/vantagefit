@@ -29,12 +29,6 @@ class CalenderViewController: UIViewController {
         dob = dateFormatter.string(from: datePicker.date)
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         
-        
-//        guard  let tableViewDOB = self.storyboard?.instantiateViewController(withIdentifier: "TableViewDOB") as? TableViewDOB else {
-//               fatalError("View Controller not found")
-//        }
-        
-        
 //        navigationController?.pushViewController(tableCellDOB, animated: true)
 //        present(tableCellDOB, animated: true, completion: nil)
         
