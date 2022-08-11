@@ -8,5 +8,5 @@
 import Foundation
 
 enum Gender{
-    case Male,Female,Others,Unspecified,Null
+    case Male,Female,Others,Unspecified
 }
