@@ -8,8 +8,19 @@
 import Foundation
 
 class UserVitals{
-    var gender : Gender = Gender.Null
-    var dateOfBirth : String = "00-00-0000"
-    var weight : Double = 0.0
-    var height : Double = 0.0
+    var gender : Gender?
+    var dateOfBirth : String?
+    var weight : Double?
+    var height : Double?
+    static var userVitalsInstance:UserVitals?
+    
+    private init(){}
+    
+    static func getUserVitalsInstance() -> UserVitals{
+        if userVitalsInstance == nil{
+            userVitalsInstance = UserVitals()
+        }
+        return userVitalsInstance!
+    }
+    
 }
