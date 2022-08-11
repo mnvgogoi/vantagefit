@@ -30,10 +30,6 @@ class CalenderViewController: UIViewController {
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         
         
-        let tableViewDOB = TableViewDOB()
-        tableViewDOB.delegate = self
-        
-        
 //        guard  let tableViewDOB = self.storyboard?.instantiateViewController(withIdentifier: "TableViewDOB") as? TableViewDOB else {
 //               fatalError("View Controller not found")
 //        }
@@ -65,15 +61,7 @@ class CalenderViewController: UIViewController {
     }
 }
 
-// MARK: -
 
-extension CalenderViewController : CalenderTableViewCellDelegate {
-        func buttonPressed () {
-            print("delegate pressed")
-            let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
-            self.present(calenderViewController, animated: true, completion: nil)
-        }
-}
 
 
 

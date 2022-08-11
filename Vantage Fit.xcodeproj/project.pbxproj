@@ -34,6 +34,8 @@
 		52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB5F289A795F0094671D /* TableViewDOB.xib */; };
 		52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */; };
 		52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */; };
+		52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C428A4C38B00C632F6 /* UserVitals.swift */; };
+		52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C728A4CB9C00C632F6 /* Gender.swift */; };
 		52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */; };
 		52CD2A95289CF627006CE4AC /* TableViewGendertwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		52A3DB5F289A795F0094671D /* TableViewDOB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDOB.xib; sourceTree = "<group>"; };
 		52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightWeight.swift; sourceTree = "<group>"; };
 		52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeightWeight.xib; sourceTree = "<group>"; };
+		52C228C428A4C38B00C632F6 /* UserVitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVitals.swift; sourceTree = "<group>"; };
+		52C228C728A4CB9C00C632F6 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewGendertwo.swift; sourceTree = "<group>"; };
 		52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewGendertwo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +245,7 @@
 		52A3DB25289A37330094671D /* Vantage Fit */ = {
 			isa = PBXGroup;
 			children = (
+				52C228C328A4C34B00C632F6 /* Models */,
 				5290EAC528A3C1B600139DD3 /* Table */,
 				528EE04D289B83E100AD9D13 /* Table Cells */,
 				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
@@ -273,6 +278,23 @@
 				52A3DB49289A37350094671D /* Vantage_FitUITestsLaunchTests.swift */,
 			);
 			path = "Vantage FitUITests";
+			sourceTree = "<group>";
+		};
+		52C228C328A4C34B00C632F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52C228C628A4CB8900C632F6 /* Enums */,
+				52C228C428A4C38B00C632F6 /* UserVitals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52C228C628A4CB8900C632F6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				52C228C728A4CB9C00C632F6 /* Gender.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +448,8 @@
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
+				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
+				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
 				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,
 				52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */,

@@ -80,6 +80,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         else if indexPath.row == 2 {
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewDOB", for: indexPath) as? TableViewDOB
             detailsCell?.selectionStyle = .none
+            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderButton(sender:)), for: .touchUpInside);
             
             return detailsCell ?? UITableViewCell()
         }
@@ -95,6 +96,12 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             return detailsCell ?? UITableViewCell()
         }
     
+    }
+    
+    // MARK: - functions
+    @objc func calenderButton(sender : UIButton){
+        let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
+        self.present(calenderViewController, animated: true, completion: nil)
     }
     
 }
