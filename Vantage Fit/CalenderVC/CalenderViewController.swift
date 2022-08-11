@@ -17,6 +17,8 @@ class CalenderViewController: UIViewController {
     let dateFormatter = DateFormatter()
     
     var dob = "dob"
+    var userVitals = UserVitals()
+    var tableDob = TableViewDOB()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,8 @@ class CalenderViewController: UIViewController {
         
         dateFormatter.dateFormat = "dd.MM.yy"
         datePicker.datePickerMode = .date
-        dob = dateFormatter.string(from: datePicker.date)
+//        dob = dateFormatter.string(from: datePicker.date)
+        userVitals.dateOfBirth = dateFormatter.string(from: datePicker.date)
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         
 //        navigationController?.pushViewController(tableCellDOB, animated: true)
@@ -41,15 +44,16 @@ class CalenderViewController: UIViewController {
     }
     
     @IBAction func datepickerValueChanged(_ sender: UIDatePicker) {
-        dob = dateFormatter.string(from: sender.date)
+//        dob = dateFormatter.string(from: sender.date)
+        userVitals.dateOfBirth = dateFormatter.string(from: sender.date)
         view.endEditing(true)
     }
     
     
     @IBAction func setDatePressed(_ sender: UIButton) {
         print("------")
-        print(dob)
-
+        print(userVitals.dateOfBirth)
+        
 //        navigationController?.popViewController(animated: true)
 //        dismiss(animated: true,completion: nil)
     }
