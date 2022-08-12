@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
+		5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285262628A51C7400F742D1 /* MeasurementUnits.swift */; };
 		5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAC628A3C1D300139DD3 /* TableViewController.swift */; };
 		5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAC728A3C1D300139DD3 /* TableViewController.xib */; };
 		5290EACC28A3C30100139DD3 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EACA28A3C30100139DD3 /* CalenderViewController.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
 		5290EAC628A3C1D300139DD3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5290EAC728A3C1D300139DD3 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		5290EACA28A3C30100139DD3 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				52C228C728A4CB9C00C632F6 /* Gender.swift */,
+				5285262628A51C7400F742D1 /* MeasurementUnits.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
+				5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */,
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,

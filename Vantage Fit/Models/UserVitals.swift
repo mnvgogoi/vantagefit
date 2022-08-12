@@ -12,6 +12,9 @@ class UserVitals{
     var dateOfBirth : String?
     var weight : Double?
     var height : Double?
+    var weightUnit : MeasurementUnits?
+    var heightUnit : MeasurementUnits?
+    
     static var userVitalsInstance:UserVitals?
     
     private init(){}

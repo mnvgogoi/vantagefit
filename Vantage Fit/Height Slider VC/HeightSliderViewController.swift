@@ -8,27 +8,35 @@
 import UIKit
 
 class HeightSliderViewController: UIViewController {
-
+    
     @IBOutlet weak var popUpBackground: UIView!
     @IBOutlet weak var popUpLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var sliderValue: UILabel!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var setValueBtn: UIButton!
-
+    @IBOutlet weak var heightUnitSwitch: UISwitch!
+    
     
     //--initial slider value
-    var currentSliderHeightValue: Int = 160
+    var currentSliderHeightValue: Double = 180
+    //    var measurement = MeasurementUnits.kg
     
     override func viewDidLoad() {
         super.viewDidLoad()
         popUpBackground.layer.cornerRadius = 20
+        slider.minimumValue = 125
+        slider.maximumValue = 250
+        
+        //        sliderValue.text = String(format: "%.f", currentSliderHeightValue) + " \(measurement)"
+        sliderValue.text = String(format: "%.f", currentSliderHeightValue) + " cm"
         
     }
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        currentSliderHeightValue = Int(sender.value)
-        sliderValue.text = "\(currentSliderHeightValue) cm"
+        currentSliderHeightValue = Double(sender.value)
+        //        sliderValue.text = "\(String(format: "%.f", currentSliderHeightValue))  \(measurement)"
+        sliderValue.text = "\(String(format: "%.f", currentSliderHeightValue))  cm"
     }
     
     
@@ -37,33 +45,43 @@ class HeightSliderViewController: UIViewController {
         dismiss(animated: true,completion: nil)
     }
     
-
+    
+    @IBAction func heightUnitChanged(_ sender: UISwitch) {
+        if (sender.isOn){
+            //            measurement = MeasurementUnits.cm
+            //
+            //            sliderValue.text = String(format: "%.f", currentSliderHeightValue) + "\(measurement)"
+            //
+            //            let centimeter = String(format: "%.f", 2.54 * currentSliderHeightValue)
+            
+            //            slider.minimumValue = 125
+            //            slider.maximumValue = 250
+            //            slider.value = Float(centimeter)!
+            print("cm")
+        }
+        else{
+            //            measurement = MeasurementUnits.ft
+            //
+            //            let inch = 0.3937 * currentSliderHeightValue;
+            //            let feet = 0.0328 * currentSliderHeightValue;
+            //
+            //            sliderValue.text = String(format: "%.f", feet)  + " \(measurement)" + " . " + String(format: "%.f", inch) + "inch"
+            
+            //            slider.minimumValue = 4.10
+            //            slider.maximumValue = 8.20
+            //            slider.value = Float(feet)
+            
+            
+            print("ft")
+        }
+    }
     
     @IBAction func setBtnPressed(_ sender: UIButton) {
         //--
         print("--------")
         print(currentSliderHeightValue)
-
+        
     }
 }
 
-// MARK: - custom slider
 
-//open class CustomSlider : UISlider {
-//    @IBInspectable open var trackWidth:CGFloat = 2 {
-//        didSet {setNeedsDisplay()}
-//    }
-//
-//    override open func trackRect(forBounds bounds: CGRect) -> CGRect {
-//        let defaultBounds = super.trackRect(forBounds: bounds)
-//        return CGRect(
-//            x: defaultBounds.origin.x,
-//            y: defaultBounds.origin.y + defaultBounds.size.height/2 - trackWidth/2,
-//            width: defaultBounds.size.width,
-//            height: trackWidth
-//        )
-//    }
-//
-//
-//
-//}

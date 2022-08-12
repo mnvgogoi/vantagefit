@@ -29,7 +29,7 @@
                             <rect key="frame" x="27" y="59" width="320" height="298"/>
                             <subviews>
                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-cY-Xgw">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                    <rect key="frame" x="5" y="0.0" width="310" height="216"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
@@ -65,13 +65,20 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="hrJ-vq-Prt" firstAttribute="top" secondItem="OY2-cY-Xgw" secondAttribute="bottom" constant="51" id="Cpe-JX-25N"/>
+                                <constraint firstAttribute="trailing" secondItem="OY2-cY-Xgw" secondAttribute="trailing" constant="5" id="H4G-C1-RLs"/>
+                                <constraint firstItem="OY2-cY-Xgw" firstAttribute="top" secondItem="Mv3-90-znj" secondAttribute="top" id="OHk-YG-ZOq"/>
+                                <constraint firstItem="OY2-cY-Xgw" firstAttribute="leading" secondItem="Mv3-90-znj" secondAttribute="leading" constant="5" id="ghh-7S-qD8"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" red="0.97631210089999998" green="0.73868316410000001" blue="0.77098256350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="Mv3-90-znj" firstAttribute="centerY" secondItem="Rkg-Xo-3bG" secondAttribute="centerY" id="Ev1-d2-wDQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Mv3-90-znj" secondAttribute="trailing" constant="27" id="Gla-Hs-ki9"/>
                         <constraint firstItem="Mv3-90-znj" firstAttribute="centerX" secondItem="Rkg-Xo-3bG" secondAttribute="centerX" id="Zxo-Hd-uZN"/>
-                        <constraint firstAttribute="width" constant="374" id="sOF-Ni-Thv"/>
+                        <constraint firstItem="Mv3-90-znj" firstAttribute="leading" secondItem="Rkg-Xo-3bG" secondAttribute="leading" constant="27" id="jbt-Ng-MNI"/>
                         <constraint firstAttribute="height" constant="416" id="vlx-Lq-vS7"/>
                     </constraints>
                 </view>
@@ -80,6 +87,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Rkg-Xo-3bG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P12-vk-Yne"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rkg-Xo-3bG" secondAttribute="trailing" constant="20" id="PDV-TB-Pq9"/>
+                <constraint firstItem="Rkg-Xo-3bG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dOR-YU-aWm"/>
                 <constraint firstItem="Rkg-Xo-3bG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uGl-6I-dVc"/>
             </constraints>
             <point key="canvasLocation" x="139" y="96"/>

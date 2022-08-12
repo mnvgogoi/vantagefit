@@ -1,12 +1,8 @@
 //
-//  TableViewDOB.swift   -->    PopUpVC
+//  TableViewDOB.swift   -->    CalenderVC
 //
 
 import UIKit
-
-//protocol CalenderDelegate{
-//    func buttonPressed()
-//}
 
 class TableViewDOB: UITableViewCell {
     
@@ -14,10 +10,9 @@ class TableViewDOB: UITableViewCell {
     @IBOutlet weak var backgroundCard: UIView!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var dobValueLabel: UILabel!
+
+    let calenderVC = CalenderViewController()
     
-//    var delegate: CalenderDelegate?
-
-
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -29,12 +24,25 @@ class TableViewDOB: UITableViewCell {
         
         dobValueLabel.text = "dd-mm-yy"
         
+        calenderVC.delegate = self
     }
+
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-  
+}
+
+//MARK: -
+
+extension TableViewDOB: DateOfBirthCellDelegate{
+    
+    func getDOB(_ dob: String) {
+        print("changed")
+        dobValueLabel.text = dob
+    }
+    
+    
 }

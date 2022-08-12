@@ -11,8 +11,6 @@ class TableViewFooterBtn: UITableViewCell {
 
     @IBOutlet weak var continueBtn: UIButton!
     
-    var userVitals = UserVitals()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -23,10 +21,10 @@ class TableViewFooterBtn: UITableViewCell {
     
     @IBAction func continueBtnPressed(_ sender: UIButton) {
         print("----------")
-        print(userVitals.gender)
-        print(userVitals.dateOfBirth)
-        print(userVitals.height)
-        print(userVitals.weight)
+        print(UserVitals.userVitalsInstance?.gender ?? "defalut gender")
+        print(UserVitals.userVitalsInstance?.dateOfBirth ?? "defalut dob")
+        print(UserVitals.userVitalsInstance?.height ?? "defalut height")
+        print(UserVitals.userVitalsInstance?.weight ?? "defalut weight")
     }
     
 }

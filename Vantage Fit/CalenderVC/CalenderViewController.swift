@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol DateOfBirthCellDelegate{
+    func getDOB(_ dob: String)
+}
+
+
 class CalenderViewController: UIViewController {
     
     @IBOutlet weak var cancelButton: UIButton!
@@ -16,19 +21,19 @@ class CalenderViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
     
-    var dob = "dob"
-    var userVitals = UserVitals()
-    var tableDob = TableViewDOB()
+    var delegate: DateOfBirthCellDelegate?
+    
+    var userVitals = UserVitals.getUserVitalsInstance()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         popUpCard.layer.cornerRadius = 20
         datePicker.backgroundColor = .white
         
-        
         dateFormatter.dateFormat = "dd.MM.yy"
         datePicker.datePickerMode = .date
-//        dob = dateFormatter.string(from: datePicker.date)
+
         userVitals.dateOfBirth = dateFormatter.string(from: datePicker.date)
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
         
@@ -44,7 +49,6 @@ class CalenderViewController: UIViewController {
     }
     
     @IBAction func datepickerValueChanged(_ sender: UIDatePicker) {
-//        dob = dateFormatter.string(from: sender.date)
         userVitals.dateOfBirth = dateFormatter.string(from: sender.date)
         view.endEditing(true)
     }
@@ -52,10 +56,18 @@ class CalenderViewController: UIViewController {
     
     @IBAction func setDatePressed(_ sender: UIButton) {
         print("------")
-        print(userVitals.dateOfBirth)
+        if let dob = userVitals.dateOfBirth{
+            print(userVitals.dateOfBirth ?? "default date")
+            if let dobDelegate = self.delegate{
+                print("dobDelegate---")
+                dobDelegate.getDOB(dob)
+            }
+
+        }
         
-//        navigationController?.popViewController(animated: true)
-//        dismiss(animated: true,completion: nil)
+
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true,completion: nil)
     }
 }
 
