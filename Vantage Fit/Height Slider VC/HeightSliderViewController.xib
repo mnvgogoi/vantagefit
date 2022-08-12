@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeightSliderViewController" customModule="Vantage_Fit" customModuleProvider="target">
             <connections>
                 <outlet property="cancelBtn" destination="8nQ-MO-vdf" id="LHQ-c8-Gjl"/>
-                <outlet property="heightUnitSwitch" destination="AZM-vi-3Gr" id="3U6-ba-UFE"/>
                 <outlet property="popUpBackground" destination="ejh-6X-oKk" id="eoR-nG-Mra"/>
                 <outlet property="popUpLabel" destination="aIo-ZU-J3P" id="Ekg-Uk-GoC"/>
                 <outlet property="setValueBtn" destination="IbY-c6-oUY" id="b0z-I1-JJ2"/>
@@ -40,7 +39,7 @@
                                     <color key="shadowColor" systemColor="tertiarySystemBackgroundColor"/>
                                     <size key="shadowOffset" width="2" height="0.0"/>
                                 </label>
-                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="160" minValue="125" maxValue="250" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-Ga-59h" customClass="CustomSlider" customModule="Vantage_Fit" customModuleProvider="target">
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minValue="125" maxValue="250" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-Ga-59h" customClass="CustomSlider" customModule="Vantage_Fit" customModuleProvider="target">
                                     <rect key="frame" x="-1.5" y="98.5" width="343" height="31"/>
                                     <color key="tintColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -57,7 +56,7 @@
                                         <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="Gj4-HF-a2Q"/>
                                     </connections>
                                 </slider>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160 cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-fk-Rep">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180 cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-fk-Rep">
                                     <rect key="frame" x="133.5" y="188.5" width="73" height="26.5"/>
                                     <color key="backgroundColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -94,13 +93,6 @@
                                 </stackView>
                             </subviews>
                         </stackView>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-vi-3Gr">
-                            <rect key="frame" x="295" y="15" width="51" height="31"/>
-                            <color key="onTintColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="heightUnitChanged:" destination="-1" eventType="valueChanged" id="hO7-ha-PeS"/>
-                            </connections>
-                        </switch>
                     </subviews>
                     <color key="backgroundColor" red="0.97631210089999998" green="0.73868316410000001" blue="0.77098256350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -108,9 +100,7 @@
                         <constraint firstAttribute="trailing" secondItem="a0H-R7-3mD" secondAttribute="trailing" constant="17" id="3FB-WQ-Dx7"/>
                         <constraint firstItem="a0H-R7-3mD" firstAttribute="centerX" secondItem="ejh-6X-oKk" secondAttribute="centerX" id="6V3-h5-55f"/>
                         <constraint firstItem="a0H-R7-3mD" firstAttribute="centerY" secondItem="ejh-6X-oKk" secondAttribute="centerY" id="YVN-TO-O1X"/>
-                        <constraint firstAttribute="trailing" secondItem="AZM-vi-3Gr" secondAttribute="trailing" constant="30" id="ZRB-UE-27C"/>
                         <constraint firstAttribute="height" constant="410" id="jrL-Fx-fCv"/>
-                        <constraint firstItem="AZM-vi-3Gr" firstAttribute="top" secondItem="ejh-6X-oKk" secondAttribute="top" constant="15" id="mrv-cg-j9L"/>
                         <constraint firstItem="a0H-R7-3mD" firstAttribute="leading" secondItem="ejh-6X-oKk" secondAttribute="leading" constant="17" id="wf1-E6-R8F"/>
                     </constraints>
                 </view>

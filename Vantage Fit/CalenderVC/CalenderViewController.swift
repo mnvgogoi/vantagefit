@@ -57,7 +57,7 @@ class CalenderViewController: UIViewController {
     @IBAction func setDatePressed(_ sender: UIButton) {
         print("------")
         if let dob = userVitals.dateOfBirth{
-            print(userVitals.dateOfBirth ?? "default date")
+            print(dob)
             if let dobDelegate = self.delegate{
                 print("dobDelegate---")
                 dobDelegate.getDOB(dob)

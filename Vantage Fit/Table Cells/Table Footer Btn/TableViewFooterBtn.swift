@@ -25,6 +25,9 @@ class TableViewFooterBtn: UITableViewCell {
         print(UserVitals.userVitalsInstance?.dateOfBirth ?? "defalut dob")
         print(UserVitals.userVitalsInstance?.height ?? "defalut height")
         print(UserVitals.userVitalsInstance?.weight ?? "defalut weight")
+        
+        print(UserVitals.userVitalsInstance?.weightUnit ?? "def weight unit")
+        print(UserVitals.userVitalsInstance?.heightUnit ?? "def height unit")
     }
     
 }
