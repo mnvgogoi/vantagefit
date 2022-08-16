@@ -12,6 +12,8 @@ class TableViewDOB: UITableViewCell {
     @IBOutlet weak var dobValueLabel: UILabel!
 
     let calenderVC = CalenderViewController()
+
+//    var delegate: NavigateViewControllerDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,13 +28,15 @@ class TableViewDOB: UITableViewCell {
         
         calenderVC.delegate = self
     }
-
-    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
+    @IBAction func calenderBtnPressed(_ sender: UIButton) {
+//        self.delegate?.navigate(TableViewDOB)
+        print("clicked")
+    }
 }
 
 //MARK: -

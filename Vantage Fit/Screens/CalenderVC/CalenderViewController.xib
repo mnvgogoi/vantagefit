@@ -22,6 +22,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popupBackgroundd" translatesAutoresizingMaskIntoConstraints="NO" id="sAZ-rE-ISF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkg-Xo-3bG">
                     <rect key="frame" x="20" y="240" width="374" height="416"/>
                     <subviews>
@@ -86,15 +89,20 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="sAZ-rE-ISF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CUu-Zg-Xsz"/>
                 <constraint firstItem="Rkg-Xo-3bG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P12-vk-Yne"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rkg-Xo-3bG" secondAttribute="trailing" constant="20" id="PDV-TB-Pq9"/>
                 <constraint firstItem="Rkg-Xo-3bG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dOR-YU-aWm"/>
+                <constraint firstItem="sAZ-rE-ISF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l6R-bh-FKz"/>
+                <constraint firstAttribute="bottom" secondItem="sAZ-rE-ISF" secondAttribute="bottom" id="tJS-PL-z88"/>
                 <constraint firstItem="Rkg-Xo-3bG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uGl-6I-dVc"/>
+                <constraint firstItem="sAZ-rE-ISF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="x1y-Fn-LGe"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="popupBackgroundd" width="1080" height="1920"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

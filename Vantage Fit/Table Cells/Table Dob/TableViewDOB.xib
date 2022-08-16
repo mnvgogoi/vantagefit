@@ -48,6 +48,9 @@
                                     <color key="baseForegroundColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.97631210089999998" green="0.73868316410000001" blue="0.77098256350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="calenderBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1dY-ZA-2nh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

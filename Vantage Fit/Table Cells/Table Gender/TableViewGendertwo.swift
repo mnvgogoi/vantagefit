@@ -32,7 +32,7 @@ class TableViewGendertwo: UITableViewCell {
         genderBackgroundImage.backgroundColor = UIColor(rgb: 0xC23B45)
         
         noDiscloseBtn.layer.cornerRadius = 20
-        noDiscloseBtn.layer.borderWidth = 5
+        noDiscloseBtn.layer.borderWidth = 3
         noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
         
     }
@@ -80,7 +80,7 @@ class TableViewGendertwo: UITableViewCell {
             genderValue = "Not Disclosed"
             userVitals.gender = Gender.Unspecified
             
-            noDiscloseBtn.layer.borderColor = UIColor(rgb: 0xC23B45).cgColor
+            noDiscloseBtn.layer.borderColor = UIColor(rgb: 0xC70039).cgColor
             
         default:
             self.maleBtn.isSelected = false
