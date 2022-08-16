@@ -15,11 +15,17 @@ class WeightViewController: UIViewController {
     @IBOutlet weak var setBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var sliderValue: UILabel!
+    @IBOutlet weak var weightPoundLabel: UILabel!
     
     
     //--initial slider value
-    var currentSliderWeightValue: Double = 50
+    var currentSliderWeightValue: Double = 30
     var measurement = MeasurementUnits.kg
+    var finalWeight: Double = 30
+    
+    var unitConverter = UnitConverters()
+    
+    var userVitals = UserVitals.getUserVitalsInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +39,13 @@ class WeightViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         currentSliderWeightValue = Double(sender.value)
-        sliderValue.text = "\(String(format: "%.f", currentSliderWeightValue)) \(measurement)"
+        finalWeight = currentSliderWeightValue.rounded()
+        sliderValue.text = "\(String(format: "%.f", finalWeight)) \(measurement)"
+        
+        let kiloToLbs = unitConverter.convertKgToLbs(finalWeight)
+        weightPoundLabel.text = "\(String(format: "%.2f", kiloToLbs)) \(MeasurementUnits.lbs)"
     }
+    
     @IBAction func cancelBtnPressed(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
@@ -44,7 +55,10 @@ class WeightViewController: UIViewController {
     
     @IBAction func setBtnPressed(_ sender: UIButton) {
         print("--------")
-        print(slider.value)
+        print(finalWeight)
+        
+        userVitals.weight = finalWeight
+        userVitals.weightUnit = MeasurementUnits.kg
 
         
     }

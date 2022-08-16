@@ -8,5 +8,5 @@
 import Foundation
 
 enum MeasurementUnits{
-    case cm,ft,inch,kg,pound
+    case cm,ft,inch,kg,lbs
 }

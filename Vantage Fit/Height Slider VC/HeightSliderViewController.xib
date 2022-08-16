@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeightSliderViewController" customModule="Vantage_Fit" customModuleProvider="target">
             <connections>
                 <outlet property="cancelBtn" destination="8nQ-MO-vdf" id="LHQ-c8-Gjl"/>
+                <outlet property="heightFeetInchLabel" destination="Cvm-pE-I1g" id="ZaI-Kv-hqv"/>
                 <outlet property="popUpBackground" destination="ejh-6X-oKk" id="eoR-nG-Mra"/>
                 <outlet property="popUpLabel" destination="aIo-ZU-J3P" id="Ekg-Uk-GoC"/>
                 <outlet property="setValueBtn" destination="IbY-c6-oUY" id="b0z-I1-JJ2"/>
@@ -27,8 +28,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-6X-oKk">
                     <rect key="frame" x="20" y="243" width="374" height="410"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-R7-3mD">
-                            <rect key="frame" x="17" y="52" width="340" height="306"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-R7-3mD">
+                            <rect key="frame" x="17" y="39.5" width="340" height="331"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIo-ZU-J3P">
                                     <rect key="frame" x="120.5" y="0.0" width="99.5" height="38.5"/>
@@ -39,8 +40,8 @@
                                     <color key="shadowColor" systemColor="tertiarySystemBackgroundColor"/>
                                     <size key="shadowOffset" width="2" height="0.0"/>
                                 </label>
-                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minValue="125" maxValue="250" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-Ga-59h" customClass="CustomSlider" customModule="Vantage_Fit" customModuleProvider="target">
-                                    <rect key="frame" x="-1.5" y="98.5" width="343" height="31"/>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="125" maxValue="250" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-Ga-59h" customClass="CustomSlider" customModule="Vantage_Fit" customModuleProvider="target">
+                                    <rect key="frame" x="-1.5" y="90.5" width="343" height="31"/>
                                     <color key="tintColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="0Ys-Ps-kUw"/>
@@ -56,16 +57,27 @@
                                         <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="Gj4-HF-a2Q"/>
                                     </connections>
                                 </slider>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180 cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-fk-Rep">
-                                    <rect key="frame" x="133.5" y="188.5" width="73" height="26.5"/>
-                                    <color key="backgroundColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                    <size key="shadowOffset" width="2" height="0.0"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-nm-AxC" userLabel="vertical stack">
+                                    <rect key="frame" x="123.5" y="172.5" width="93" height="75.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125 cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-fk-Rep">
+                                            <rect key="frame" x="11" y="0.0" width="71.5" height="26.5"/>
+                                            <color key="backgroundColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="2" height="0.0"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 ft 1.21 in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvm-pE-I1g">
+                                            <rect key="frame" x="0.0" y="51.5" width="93" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="o67-LH-Xyj" userLabel="horizontal stack">
-                                    <rect key="frame" x="80.5" y="275" width="179" height="31"/>
+                                    <rect key="frame" x="80.5" y="300" width="179" height="31"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbY-c6-oUY">
                                             <rect key="frame" x="0.0" y="0.0" width="68.5" height="31"/>

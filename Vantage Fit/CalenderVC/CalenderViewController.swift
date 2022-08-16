@@ -21,6 +21,7 @@ class CalenderViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
     
+    //*
     var delegate: DateOfBirthCellDelegate?
     
     var userVitals = UserVitals.getUserVitalsInstance()

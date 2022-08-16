@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CAAD628A80FE700125A00 /* UnitConverters.swift */; };
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
 		5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285262628A51C7400F742D1 /* MeasurementUnits.swift */; };
 		5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAC628A3C1D300139DD3 /* TableViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526CAAD628A80FE700125A00 /* UnitConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverters.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
 		5290EAC628A3C1D300139DD3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526CAAD528A80FC600125A00 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				526CAAD628A80FE700125A00 /* UnitConverters.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		528EE04D289B83E100AD9D13 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +257,7 @@
 		52A3DB25289A37330094671D /* Vantage Fit */ = {
 			isa = PBXGroup;
 			children = (
+				526CAAD528A80FC600125A00 /* Utility */,
 				52C228C328A4C34B00C632F6 /* Models */,
 				5290EAC528A3C1B600139DD3 /* Table */,
 				528EE04D289B83E100AD9D13 /* Table Cells */,
@@ -450,6 +461,7 @@
 				52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */,
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
+				526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
 				5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */,
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
