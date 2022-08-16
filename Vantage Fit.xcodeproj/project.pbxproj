@@ -19,6 +19,9 @@
 		5290EAD628A3C76000139DD3 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAD428A3C76000139DD3 /* WeightViewController.swift */; };
 		5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAD528A3C76000139DD3 /* WeightViewController.xib */; };
 		5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292F5A6289BD35B00221F36 /* radioBtnController.swift */; };
+		529A840628AB65FF005D605F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A840428AB65FF005D605F /* ResultViewController.swift */; };
+		529A840728AB65FF005D605F /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529A840528AB65FF005D605F /* ResultViewController.xib */; };
+		529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */; };
 		52A3DB27289A37330094671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB26289A37330094671D /* AppDelegate.swift */; };
 		52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB28289A37330094671D /* SceneDelegate.swift */; };
 		52A3DB2B289A37330094671D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB2A289A37330094671D /* ViewController.swift */; };
@@ -72,6 +75,9 @@
 		5290EAD428A3C76000139DD3 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		5290EAD528A3C76000139DD3 /* WeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightViewController.xib; sourceTree = "<group>"; };
 		5292F5A6289BD35B00221F36 /* radioBtnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioBtnController.swift; sourceTree = "<group>"; };
+		529A840428AB65FF005D605F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		529A840528AB65FF005D605F /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewPresenter.swift; sourceTree = "<group>"; };
 		52A3DB23289A37330094671D /* Vantage Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vantage Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3DB26289A37330094671D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A3DB28289A37330094671D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +240,26 @@
 			path = "Weight Slider VC";
 			sourceTree = "<group>";
 		};
+		529A840328AB65E3005D605F /* Result VC */ = {
+			isa = PBXGroup;
+			children = (
+				529A840428AB65FF005D605F /* ResultViewController.swift */,
+				529A840528AB65FF005D605F /* ResultViewController.xib */,
+			);
+			path = "Result VC";
+			sourceTree = "<group>";
+		};
+		529A840A28AB9C98005D605F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				529A840328AB65E3005D605F /* Result VC */,
+				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
+				5290EAD328A3C74100139DD3 /* Height Slider VC */,
+				5290EACE28A3C3F500139DD3 /* CalenderVC */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		52A3DB1A289A37330094671D = {
 			isa = PBXGroup;
 			children = (
@@ -261,9 +287,7 @@
 				52C228C328A4C34B00C632F6 /* Models */,
 				5290EAC528A3C1B600139DD3 /* Table */,
 				528EE04D289B83E100AD9D13 /* Table Cells */,
-				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
-				5290EAD328A3C74100139DD3 /* Height Slider VC */,
-				5290EACE28A3C3F500139DD3 /* CalenderVC */,
+				529A840A28AB9C98005D605F /* Screens */,
 				52A3DB26289A37330094671D /* AppDelegate.swift */,
 				52A3DB28289A37330094671D /* SceneDelegate.swift */,
 				52A3DB2A289A37330094671D /* ViewController.swift */,
@@ -298,6 +322,7 @@
 			children = (
 				52C228C628A4CB8900C632F6 /* Enums */,
 				52C228C428A4C38B00C632F6 /* UserVitals.swift */,
+				529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -423,6 +448,7 @@
 				52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */,
 				52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */,
 				5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */,
+				529A840728AB65FF005D605F /* ResultViewController.xib in Resources */,
 				5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */,
 				5290EAD228A3C59A00139DD3 /* HeightSliderViewController.xib in Resources */,
 				52A3DB30289A37350094671D /* Assets.xcassets in Resources */,
@@ -452,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5290EAD628A3C76000139DD3 /* WeightViewController.swift in Sources */,
+				529A840628AB65FF005D605F /* ResultViewController.swift in Sources */,
 				5290EAD128A3C59A00139DD3 /* HeightSliderViewController.swift in Sources */,
 				52A3DB58289A75830094671D /* TableViewHeader.swift in Sources */,
 				52A3DB2B289A37330094671D /* ViewController.swift in Sources */,
@@ -467,6 +494,7 @@
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
+				529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */,
 				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,
 				52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */,
 			);

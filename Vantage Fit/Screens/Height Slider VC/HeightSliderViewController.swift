@@ -27,6 +27,8 @@ class HeightSliderViewController: UIViewController {
     
     var unitConverter = UnitConverters()
     
+    var userVitals = UserVitals.getUserVitalsInstance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         popUpBackground.layer.cornerRadius = 20
@@ -45,17 +47,6 @@ class HeightSliderViewController: UIViewController {
         finalHeight = currentSliderHeightValue.rounded()
         sliderValue.text = "\(String(format: "%.f", finalHeight)) \(measurement)"
         
-        
-        //        var inch = 0.3937 * finalHeight
-        //        var feet = 0.0328 * finalHeight
-        
-        //        var feet = (finalHeight / 2.54) / 12
-        //        var inch = (finalHeight / 2.54) - (feet * 12)
-        
-        //        heightFeetInchLabel.text = "\(String(format: "%.f", feet)) \(MeasurementUnits.ft) \(String(format: "%.1f", inch)) \(MeasurementUnits.inch)"
-        
-        
-        
         let (cmToFeet, cmToInches) = unitConverter.convertCmsToFeetAndInches(finalHeight)
         heightFeetInchLabel.text = "\(String(format: "%.f", cmToFeet)) \(MeasurementUnits.ft) \(String(format: "%.2f", cmToInches)) \(MeasurementUnits.inch)"
         
@@ -71,7 +62,13 @@ class HeightSliderViewController: UIViewController {
     @IBAction func setBtnPressed(_ sender: UIButton) {
         //--
         print("--------")
-        print(currentSliderHeightValue)
+        print(finalHeight)
+        
+        userVitals.height = finalHeight
+        userVitals.heightUnit = MeasurementUnits.cm
+        
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true,completion: nil)
         
     }
 }

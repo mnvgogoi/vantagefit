@@ -1,8 +1,6 @@
 //
-//  TableViewController.swift
-//  Vantage Fit
 //
-//  Created by Vantage Circle on 10/08/22.
+//
 //
 
 import UIKit
@@ -11,6 +9,8 @@ class TableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var presenter = UserDetailsViewPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,16 +18,12 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
         
         
-        //register cell with table
-        tableView.register(UINib.init(nibName: "TableViewHeader", bundle: nil), forCellReuseIdentifier: "TableViewHeader")
-        
-        tableView.register(UINib.init(nibName: "TableViewGendertwo", bundle: nil), forCellReuseIdentifier: "TableViewGendertwo")
-        
-        tableView.register(UINib.init(nibName: "TableViewDOB", bundle: nil), forCellReuseIdentifier: "TableViewDOB")
-        
-        tableView.register(UINib.init(nibName: "TableViewHeightWeight", bundle: nil), forCellReuseIdentifier: "TableViewHeightWeight")
-        
-        tableView.register(UINib.init(nibName: "TableViewFooterBtn", bundle: nil), forCellReuseIdentifier: "TableViewFooterBtn")
+        //register cells with table
+        UserDetailsViewPresenter.allItems.forEach (
+            {
+                tableView.register($0.nib, forCellReuseIdentifier: $0.identifier)
+            }
+        )
     }
 }
 
@@ -64,27 +60,27 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-
+        
+        switch UserDetailsViewPresenter.allItems[indexPath.row]{
+        case .header:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewHeader", for: indexPath) as? TableViewHeader
             detailsCell?.selectionStyle = .none
             return detailsCell ?? UITableViewCell()
-
-        }
-        else if indexPath.row == 1 {
+            
+        case .gender:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewGendertwo", for: indexPath) as? TableViewGendertwo
             
             detailsCell?.selectionStyle = .none
             return detailsCell ?? UITableViewCell()
-        }
-        else if indexPath.row == 2 {
+            
+        case .dob:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewDOB", for: indexPath) as? TableViewDOB
             detailsCell?.selectionStyle = .none
-            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderButton(sender:)), for: .touchUpInside);
+            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
             
             return detailsCell ?? UITableViewCell()
-        }
-        else if indexPath.row == 3 {
+            
+        case .heightWeight:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewHeightWeight", for: indexPath) as? TableViewHeightWeight
             detailsCell?.selectionStyle = .none
             
@@ -92,13 +88,14 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             detailsCell?.backgroundCard.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.displaySlider)))
             //for weight card---
             detailsCell?.backgroundCardWeight.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.displayWeightSlider)))
-
             
             return detailsCell ?? UITableViewCell()
-        }
-        else {
+            
+        case .footer:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewFooterBtn", for: indexPath) as? TableViewFooterBtn
             detailsCell?.selectionStyle = .none
+            //*
+            detailsCell?.continueBtn.addTarget(self, action: #selector(self.displayResultVC(sender:)), for: .touchUpInside);
             return detailsCell ?? UITableViewCell()
         }
     
@@ -106,7 +103,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
     // MARK: - functions
     
-    @objc func calenderButton(sender : UIButton){
+    @objc func calenderPopUP(sender : UIButton){
         let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
         self.present(calenderViewController, animated: true, completion: nil)
     }
@@ -119,6 +116,11 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     @objc func displayWeightSlider() {
         let weightViewController = WeightViewController(nibName: "WeightViewController", bundle: nil)
         self.present(weightViewController, animated: true, completion: nil)
+    }
+    
+    @objc func displayResultVC(sender : UIButton) {
+        let resultViewController = ResultViewController(nibName: "ResultViewController", bundle: nil)
+        navigationController?.pushViewController(resultViewController, animated: true)
     }
     
 }

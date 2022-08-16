@@ -24,14 +24,17 @@ class TableViewGendertwo: UITableViewCell {
     
     var genderValue = "No Value"
     
+    var userVitals = UserVitals.getUserVitalsInstance()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         genderBackgroundImage.layer.cornerRadius = 25
         genderBackgroundImage.backgroundColor = UIColor(rgb: 0xC23B45)
         
         noDiscloseBtn.layer.cornerRadius = 20
-        noDiscloseBtn.layer.borderWidth = 3
-        noDiscloseBtn.layer.borderColor = UIColor(rgb: 0xC23B45).cgColor
+        noDiscloseBtn.layer.borderWidth = 5
+        noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -48,30 +51,45 @@ class TableViewGendertwo: UITableViewCell {
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "Male"
+            userVitals.gender = Gender.Male
+            noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
+            
         case 2:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = true
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "Female"
+            userVitals.gender = Gender.Female
+            noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
+            
         case 3:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = true
             self.noDiscloseBtn.isSelected = false
             genderValue = "Others"
+            userVitals.gender = Gender.Others
+            noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
+            
         case 4:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = true
             genderValue = "Not Disclosed"
+            userVitals.gender = Gender.Unspecified
+            
+            noDiscloseBtn.layer.borderColor = UIColor(rgb: 0xC23B45).cgColor
+            
         default:
             self.maleBtn.isSelected = false
             self.femaleBtn.isSelected = false
             self.othersBtn.isSelected = false
             self.noDiscloseBtn.isSelected = false
             genderValue = "No Value"
+            userVitals.gender = Gender.Unspecified
+            noDiscloseBtn.layer.borderColor = UIColor.white.cgColor
         }
     }
     

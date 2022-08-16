@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol cardLabelChangeProtocol{
+    func changeLabel(_ data: String)
+}
+
 class WeightViewController: UIViewController {
 
     @IBOutlet weak var popUpCard: UIView!
@@ -26,6 +30,9 @@ class WeightViewController: UIViewController {
     var unitConverter = UnitConverters()
     
     var userVitals = UserVitals.getUserVitalsInstance()
+    
+    //*
+    var delegate: cardLabelChangeProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +66,18 @@ class WeightViewController: UIViewController {
         
         userVitals.weight = finalWeight
         userVitals.weightUnit = MeasurementUnits.kg
+        
+        //*
+        if let userWeight = userVitals.weight{
+            print(userWeight)
+            if let textDelegate = self.delegate{
+                print("dobDelegate---")
+                textDelegate.changeLabel(String(finalWeight))
+            }
+
+        }
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true,completion: nil)
 
         
     }

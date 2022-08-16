@@ -15,7 +15,7 @@ class UserVitals{
     var weightUnit : MeasurementUnits?
     var heightUnit : MeasurementUnits?
     
-    static var userVitalsInstance:UserVitals?
+    static private var userVitalsInstance:UserVitals?
     
     private init(){}
     
