@@ -27,3 +27,7 @@ class UserVitals{
     }
     
 }
+
+protocol TableViewDOBCellDelegate {
+    func didSetDOB()
+}

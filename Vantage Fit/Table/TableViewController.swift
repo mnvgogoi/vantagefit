@@ -76,7 +76,8 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         case .dob:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewDOB", for: indexPath) as? TableViewDOB
             detailsCell?.selectionStyle = .none
-            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
+//            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
+            detailsCell?.delegate = self
             
             return detailsCell ?? UITableViewCell()
             
@@ -123,6 +124,13 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         navigationController?.pushViewController(resultViewController, animated: true)
     }
     
+}
+
+extension TableViewController : DOBCellToCalenderViewController{
+    
+    func navigateFromDOBCellToCalenderView(_ calenderViewController: CalenderViewController) {
+        self.navigationController?.pushViewController(calenderViewController, animated: true)
+    }
 }
 
 

@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol DateOfBirthCellDelegate{
-    func getDOB(_ dob: String)
-}
-
 
 class CalenderViewController: UIViewController {
     
@@ -22,7 +18,7 @@ class CalenderViewController: UIViewController {
     let dateFormatter = DateFormatter()
     
     //*
-    var delegate: DateOfBirthCellDelegate?
+    var delegate: TableViewDOBCellDelegate?
     
     var userVitals = UserVitals.getUserVitalsInstance()
     
@@ -56,17 +52,7 @@ class CalenderViewController: UIViewController {
     
     
     @IBAction func setDatePressed(_ sender: UIButton) {
-        print("------")
-        if let dob = userVitals.dateOfBirth{
-            print(dob)
-            if let dobDelegate = self.delegate{
-                print("dobDelegate---")
-                dobDelegate.getDOB(dob)
-            }
-
-        }
-        
-
+        delegate?.didSetDOB()
         navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
     }

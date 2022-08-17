@@ -11,10 +11,10 @@ class TableViewDOB: UITableViewCell {
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var dobValueLabel: UILabel!
 
-    let calenderVC = CalenderViewController()
+    private let calenderVC = CalenderViewController()
+    private var userVitals = UserVitals.getUserVitalsInstance()
 
-//    var delegate: NavigateViewControllerDelegate?
-    
+    var delegate: DOBCellToCalenderViewController?
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -34,19 +34,16 @@ class TableViewDOB: UITableViewCell {
     }
     
     @IBAction func calenderBtnPressed(_ sender: UIButton) {
-//        self.delegate?.navigate(TableViewDOB)
-        print("clicked")
+        delegate?.navigateFromDOBCellToCalenderView(calenderVC)
     }
 }
 
 //MARK: -
 
-extension TableViewDOB: DateOfBirthCellDelegate{
+extension TableViewDOB: TableViewDOBCellDelegate{
     
-    func getDOB(_ dob: String) {
-        print("changed")
-        dobValueLabel.text = dob
+    func didSetDOB() {
+        dobValueLabel.text = userVitals.dateOfBirth
     }
-    
     
 }
