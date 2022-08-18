@@ -22,6 +22,8 @@
 		529A840628AB65FF005D605F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A840428AB65FF005D605F /* ResultViewController.swift */; };
 		529A840728AB65FF005D605F /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529A840528AB65FF005D605F /* ResultViewController.xib */; };
 		529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */; };
+		529E673A28ACF0A400DDEC96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E673828ACF0A400DDEC96 /* ProfileViewController.swift */; };
+		529E673B28ACF0A400DDEC96 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529E673928ACF0A400DDEC96 /* ProfileViewController.xib */; };
 		52A3DB27289A37330094671D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB26289A37330094671D /* AppDelegate.swift */; };
 		52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB28289A37330094671D /* SceneDelegate.swift */; };
 		52A3DB2B289A37330094671D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB2A289A37330094671D /* ViewController.swift */; };
@@ -39,11 +41,19 @@
 		52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB5F289A795F0094671D /* TableViewDOB.xib */; };
 		52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */; };
 		52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */; };
+		52AA08E728AD034F006FD447 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA08E528AD034F006FD447 /* HomeViewController.swift */; };
+		52AA08E828AD034F006FD447 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AA08E628AD034F006FD447 /* HomeViewController.xib */; };
 		52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C428A4C38B00C632F6 /* UserVitals.swift */; };
 		52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C728A4CB9C00C632F6 /* Gender.swift */; };
 		52C6020628ACAA9700FB369F /* DOBCellToCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6020528ACAA9700FB369F /* DOBCellToCalenderView.swift */; };
 		52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */; };
 		52CD2A95289CF627006CE4AC /* TableViewGendertwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */; };
+		52E68A3228ACC57500E26740 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E68A3128ACC57500E26740 /* GoogleService-Info.plist */; };
+		52E68A3628ACC9A500E26740 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E68A3428ACC9A500E26740 /* LoginViewController.swift */; };
+		52E68A3728ACC9A500E26740 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E68A3528ACC9A500E26740 /* LoginViewController.xib */; };
+		78A0BC111024A8CB66090E69 /* Pods_Vantage_Fit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */; };
+		876AD70E44CA9359C522227D /* Pods_Vantage_Fit_Vantage_FitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D0DB967C37626C6F49103E /* Pods_Vantage_Fit_Vantage_FitUITests.framework */; };
+		FFF039BB5013B9890166279E /* Pods_Vantage_FitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08032FC2849D86D77307CA22 /* Pods-Vantage Fit-Vantage FitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage Fit-Vantage FitUITests.release.xcconfig"; path = "Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B3EDD3B2FFC44205EE5E73E /* Pods-Vantage FitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage FitTests.debug.xcconfig"; path = "Target Support Files/Pods-Vantage FitTests/Pods-Vantage FitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_FitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526CAAD628A80FE700125A00 /* UnitConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverters.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
@@ -79,6 +93,8 @@
 		529A840428AB65FF005D605F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		529A840528AB65FF005D605F /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 		529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewPresenter.swift; sourceTree = "<group>"; };
+		529E673828ACF0A400DDEC96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		529E673928ACF0A400DDEC96 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		52A3DB23289A37330094671D /* Vantage Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vantage Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3DB26289A37330094671D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A3DB28289A37330094671D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,11 +116,21 @@
 		52A3DB5F289A795F0094671D /* TableViewDOB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDOB.xib; sourceTree = "<group>"; };
 		52A3DB62289A7DF70094671D /* TableViewHeightWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightWeight.swift; sourceTree = "<group>"; };
 		52A3DB63289A7DF70094671D /* TableViewHeightWeight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeightWeight.xib; sourceTree = "<group>"; };
+		52AA08E528AD034F006FD447 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52AA08E628AD034F006FD447 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		52C228C428A4C38B00C632F6 /* UserVitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVitals.swift; sourceTree = "<group>"; };
 		52C228C728A4CB9C00C632F6 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		52C6020528ACAA9700FB369F /* DOBCellToCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBCellToCalenderView.swift; sourceTree = "<group>"; };
 		52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewGendertwo.swift; sourceTree = "<group>"; };
 		52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewGendertwo.xib; sourceTree = "<group>"; };
+		52E68A3128ACC57500E26740 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52E68A3428ACC9A500E26740 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52E68A3528ACC9A500E26740 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6908CFC8C1B245887217ABF4 /* Pods-Vantage Fit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage Fit.debug.xcconfig"; path = "Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit.debug.xcconfig"; sourceTree = "<group>"; };
+		711BDDF966410F54374C04D0 /* Pods-Vantage Fit-Vantage FitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage Fit-Vantage FitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83F889C2B97932B4B8ED75DC /* Pods-Vantage Fit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage Fit.release.xcconfig"; path = "Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit.release.xcconfig"; sourceTree = "<group>"; };
+		D0D0DB967C37626C6F49103E /* Pods_Vantage_Fit_Vantage_FitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_Fit_Vantage_FitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27BF9E51579117DB483917E /* Pods-Vantage FitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage FitTests.release.xcconfig"; path = "Target Support Files/Pods-Vantage FitTests/Pods-Vantage FitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A0BC111024A8CB66090E69 /* Pods_Vantage_Fit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF039BB5013B9890166279E /* Pods_Vantage_FitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876AD70E44CA9359C522227D /* Pods_Vantage_Fit_Vantage_FitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +283,24 @@
 		529A840A28AB9C98005D605F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52AA08E428AD032D006FD447 /* Home */,
+				529E673728ACF06000DDEC96 /* Profile */,
+				52E68A3328ACC99100E26740 /* Login */,
 				529A840328AB65E3005D605F /* Result VC */,
 				5290EAD828A3C81E00139DD3 /* Weight Slider VC */,
 				5290EAD328A3C74100139DD3 /* Height Slider VC */,
 				5290EACE28A3C3F500139DD3 /* CalenderVC */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		529E673728ACF06000DDEC96 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				529E673828ACF0A400DDEC96 /* ProfileViewController.swift */,
+				529E673928ACF0A400DDEC96 /* ProfileViewController.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		52A3DB1A289A37330094671D = {
@@ -269,6 +310,8 @@
 				52A3DB3C289A37350094671D /* Vantage FitTests */,
 				52A3DB46289A37350094671D /* Vantage FitUITests */,
 				52A3DB24289A37330094671D /* Products */,
+				869BBDBD90F7F0FA54B99F06 /* Pods */,
+				EF8C631108EACFDB5E8429C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,19 +328,20 @@
 		52A3DB25289A37330094671D /* Vantage Fit */ = {
 			isa = PBXGroup;
 			children = (
+				52E68A3128ACC57500E26740 /* GoogleService-Info.plist */,
+				52A3DB34289A37350094671D /* Info.plist */,
+				52A3DB26289A37330094671D /* AppDelegate.swift */,
+				52A3DB28289A37330094671D /* SceneDelegate.swift */,
+				52A3DB2A289A37330094671D /* ViewController.swift */,
+				52A3DB2C289A37330094671D /* Main.storyboard */,
 				52C6020428ACAA3500FB369F /* Navigation */,
 				526CAAD528A80FC600125A00 /* Utility */,
 				52C228C328A4C34B00C632F6 /* Models */,
 				5290EAC528A3C1B600139DD3 /* Table */,
 				528EE04D289B83E100AD9D13 /* Table Cells */,
 				529A840A28AB9C98005D605F /* Screens */,
-				52A3DB26289A37330094671D /* AppDelegate.swift */,
-				52A3DB28289A37330094671D /* SceneDelegate.swift */,
-				52A3DB2A289A37330094671D /* ViewController.swift */,
-				52A3DB2C289A37330094671D /* Main.storyboard */,
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
-				52A3DB34289A37350094671D /* Info.plist */,
 				5290EABE28A3798200139DD3 /* others */,
 			);
 			path = "Vantage Fit";
@@ -318,6 +362,15 @@
 				52A3DB49289A37350094671D /* Vantage_FitUITestsLaunchTests.swift */,
 			);
 			path = "Vantage FitUITests";
+			sourceTree = "<group>";
+		};
+		52AA08E428AD032D006FD447 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52AA08E528AD034F006FD447 /* HomeViewController.swift */,
+				52AA08E628AD034F006FD447 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		52C228C328A4C34B00C632F6 /* Models */ = {
@@ -347,6 +400,38 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		52E68A3328ACC99100E26740 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				52E68A3428ACC9A500E26740 /* LoginViewController.swift */,
+				52E68A3528ACC9A500E26740 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		869BBDBD90F7F0FA54B99F06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6908CFC8C1B245887217ABF4 /* Pods-Vantage Fit.debug.xcconfig */,
+				83F889C2B97932B4B8ED75DC /* Pods-Vantage Fit.release.xcconfig */,
+				711BDDF966410F54374C04D0 /* Pods-Vantage Fit-Vantage FitUITests.debug.xcconfig */,
+				08032FC2849D86D77307CA22 /* Pods-Vantage Fit-Vantage FitUITests.release.xcconfig */,
+				0B3EDD3B2FFC44205EE5E73E /* Pods-Vantage FitTests.debug.xcconfig */,
+				E27BF9E51579117DB483917E /* Pods-Vantage FitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF8C631108EACFDB5E8429C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */,
+				D0D0DB967C37626C6F49103E /* Pods_Vantage_Fit_Vantage_FitUITests.framework */,
+				39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,9 +439,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52A3DB4D289A37350094671D /* Build configuration list for PBXNativeTarget "Vantage Fit" */;
 			buildPhases = (
+				2955308657E04276F2D3B35A /* [CP] Check Pods Manifest.lock */,
 				52A3DB1F289A37330094671D /* Sources */,
 				52A3DB20289A37330094671D /* Frameworks */,
 				52A3DB21289A37330094671D /* Resources */,
+				CF77480301BBA26A54959F77 /* [CP] Embed Pods Frameworks */,
+				3ED349C72CB46C9167EFA705 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,6 +459,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52A3DB50289A37350094671D /* Build configuration list for PBXNativeTarget "Vantage FitTests" */;
 			buildPhases = (
+				CC8E5C45C4110B702B9D31E0 /* [CP] Check Pods Manifest.lock */,
 				52A3DB35289A37350094671D /* Sources */,
 				52A3DB36289A37350094671D /* Frameworks */,
 				52A3DB37289A37350094671D /* Resources */,
@@ -389,9 +478,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52A3DB53289A37350094671D /* Build configuration list for PBXNativeTarget "Vantage FitUITests" */;
 			buildPhases = (
+				C05A9B8CA59EB0F64DC6928F /* [CP] Check Pods Manifest.lock */,
 				52A3DB3F289A37350094671D /* Sources */,
 				52A3DB40289A37350094671D /* Frameworks */,
 				52A3DB41289A37350094671D /* Resources */,
+				2428EC3647F77EBAAB34CFBC /* [CP] Embed Pods Frameworks */,
+				3FDB732C7ED357532295D7CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,14 +548,18 @@
 				52CD2A95289CF627006CE4AC /* TableViewGendertwo.xib in Resources */,
 				52A3DB5D289A77EA0094671D /* TableViewFooterBtn.xib in Resources */,
 				52A3DB33289A37350094671D /* LaunchScreen.storyboard in Resources */,
+				52E68A3728ACC9A500E26740 /* LoginViewController.xib in Resources */,
 				52A3DB65289A7DF70094671D /* TableViewHeightWeight.xib in Resources */,
 				52A3DB61289A795F0094671D /* TableViewDOB.xib in Resources */,
 				5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */,
 				529A840728AB65FF005D605F /* ResultViewController.xib in Resources */,
+				529E673B28ACF0A400DDEC96 /* ProfileViewController.xib in Resources */,
 				5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */,
 				5290EAD228A3C59A00139DD3 /* HeightSliderViewController.xib in Resources */,
+				52AA08E828AD034F006FD447 /* HomeViewController.xib in Resources */,
 				52A3DB30289A37350094671D /* Assets.xcassets in Resources */,
 				52A3DB2E289A37330094671D /* Main.storyboard in Resources */,
+				52E68A3228ACC57500E26740 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +579,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2428EC3647F77EBAAB34CFBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2955308657E04276F2D3B35A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vantage Fit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED349C72CB46C9167EFA705 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FDB732C7ED357532295D7CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit-Vantage FitUITests/Pods-Vantage Fit-Vantage FitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05A9B8CA59EB0F64DC6928F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vantage Fit-Vantage FitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8E5C45C4110B702B9D31E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vantage FitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF77480301BBA26A54959F77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vantage Fit/Pods-Vantage Fit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52A3DB1F289A37330094671D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -498,10 +731,13 @@
 				5271C7B828A225C800278C68 /* Global.swift in Sources */,
 				52A3DB60289A795F0094671D /* TableViewDOB.swift in Sources */,
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
+				52E68A3628ACC9A500E26740 /* LoginViewController.swift in Sources */,
+				52AA08E728AD034F006FD447 /* HomeViewController.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
 				526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
 				5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */,
+				529E673A28ACF0A400DDEC96 /* ProfileViewController.swift in Sources */,
 				52C6020628ACAA9700FB369F /* DOBCellToCalenderView.swift in Sources */,
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
@@ -680,6 +916,7 @@
 		};
 		52A3DB4E289A37350094671D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6908CFC8C1B245887217ABF4 /* Pods-Vantage Fit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -688,9 +925,9 @@
 				DEVELOPMENT_TEAM = Q9H79YSD8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vantage Fit/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,6 +945,7 @@
 		};
 		52A3DB4F289A37350094671D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F889C2B97932B4B8ED75DC /* Pods-Vantage Fit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -716,9 +954,9 @@
 				DEVELOPMENT_TEAM = Q9H79YSD8C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vantage Fit/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -736,6 +974,7 @@
 		};
 		52A3DB51289A37350094671D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3EDD3B2FFC44205EE5E73E /* Pods-Vantage FitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -756,6 +995,7 @@
 		};
 		52A3DB52289A37350094671D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27BF9E51579117DB483917E /* Pods-Vantage FitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -776,6 +1016,7 @@
 		};
 		52A3DB54289A37350094671D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711BDDF966410F54374C04D0 /* Pods-Vantage Fit-Vantage FitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -794,6 +1035,7 @@
 		};
 		52A3DB55289A37350094671D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08032FC2849D86D77307CA22 /* Pods-Vantage Fit-Vantage FitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

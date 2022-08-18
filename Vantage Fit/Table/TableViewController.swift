@@ -27,7 +27,7 @@ class TableViewController: UIViewController {
     }
 }
 
-// MARK: - extenstions
+// MARK: - UITableViewDataSource and UITableViewDelegate extenstions
 
 extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
@@ -38,11 +38,11 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return UITableView.automaticDimension
         
-        var value = 100
+        var value = 80
 
         switch indexPath.row{
         case 0:
-            value = 100
+            value = 80
         case 1:
             value = 250
         case 2:
@@ -52,7 +52,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         case 4:
             value = 100
         default:
-            value = 100
+            value = 80
         }
 
         return CGFloat(value)
@@ -104,10 +104,10 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
     // MARK: - functions
     
-    @objc func calenderPopUP(sender : UIButton){
-        let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
-        self.present(calenderViewController, animated: true, completion: nil)
-    }
+//    @objc func calenderPopUP(sender : UIButton){
+//        let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
+//        self.present(calenderViewController, animated: true, completion: nil)
+//    }
     
     @objc func displaySlider() {
         let heightSliderViewController = HeightSliderViewController(nibName: "HeightSliderViewController", bundle: nil)
@@ -125,6 +125,8 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
 }
+
+// MARK: - Navigation extensions
 
 extension TableViewController : DOBCellToCalenderViewController{
     

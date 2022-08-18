@@ -13,8 +13,9 @@ class TableViewDOB: UITableViewCell {
 
     private let calenderVC = CalenderViewController()
     private var userVitals = UserVitals.getUserVitalsInstance()
-
+    //*
     var delegate: DOBCellToCalenderViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
