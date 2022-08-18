@@ -7,8 +7,13 @@
 
 import UIKit
 
-protocol cardLabelChangeProtocol{
-    func changeLabel(_ data: String)
+protocol LengthCollector {
+    func didSetNewLength(type:Int, value:Double)
+}
+
+enum LengthUnit:Int {
+    case Weight = 0
+    case Height = 1
 }
 
 class WeightViewController: UIViewController {
@@ -29,10 +34,9 @@ class WeightViewController: UIViewController {
     
     var unitConverter = UnitConverters()
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
-    //*
-    var delegate: cardLabelChangeProtocol?
+    var collector:LengthCollector?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,14 +72,15 @@ class WeightViewController: UIViewController {
         userVitals.weightUnit = MeasurementUnits.kg
         
         //*
-        if let userWeight = userVitals.weight{
-            print(userWeight)
-            if let textDelegate = self.delegate{
-                print("dobDelegate---")
-                textDelegate.changeLabel(String(finalWeight))
-            }
-
-        }
+//        if let userWeight = userVitals.weight {
+//            print(userWeight)
+//            if let textDelegate = self.delegate{
+//                print("dobDelegate---")
+//                textDelegate.changeLabel(String(finalWeight))
+//            }
+//
+//        }
+        self.collector?.didSetNewLength(type: LengthUnit.Weight.rawValue, value: finalWeight)
         navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
 

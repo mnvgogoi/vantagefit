@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        
+        _ = UserVitals.sharedInstance
 //        let user = Auth.auth().currentUser
 //        if user?.uid == nil {
 //        //Show Login Screen

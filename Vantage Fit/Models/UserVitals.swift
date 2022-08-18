@@ -7,23 +7,41 @@
 
 import Foundation
 
-class UserVitals{
-    var gender : Gender?
+class UserVitals {
+    
+    var gender:Gender? {
+        get {
+            return self.genderValue
+        } set(newValue) {
+            self.genderValue = newValue
+            //push to firebase
+        }
+    }
+    
+    private var genderValue  : Gender?
     var dateOfBirth : String?
     var weight : Double?
     var height : Double?
+    
+    var heightDisplayValue:String? {
+        if let height = height {
+            return "\(height)"
+        } else { return nil }
+    }
+    
+    var weightDisplayValue:String? {
+        if let weight = weight {
+            return "\(weight)"
+        } else { return nil }
+    }
+    
     var weightUnit : MeasurementUnits?
     var heightUnit : MeasurementUnits?
     
-    static private var userVitalsInstance:UserVitals?
+    static let sharedInstance: UserVitals = UserVitals()
     
-    private init(){}
-    
-    static func getUserVitalsInstance() -> UserVitals{
-        if userVitalsInstance == nil{
-            userVitalsInstance = UserVitals()
-        }
-        return userVitalsInstance!
+    private init() {
+        //pull from firebase
     }
     
 }

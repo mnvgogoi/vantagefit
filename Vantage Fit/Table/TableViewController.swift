@@ -90,6 +90,8 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             //for weight card---
             detailsCell?.backgroundCardWeight.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.displayWeightSlider)))
             
+            detailsCell?.setData(heightValue: UserVitals.sharedInstance.heightDisplayValue, weightValue: UserVitals.sharedInstance.weightDisplayValue)
+            
             return detailsCell ?? UITableViewCell()
             
         case .footer:
@@ -116,6 +118,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
     @objc func displayWeightSlider() {
         let weightViewController = WeightViewController(nibName: "WeightViewController", bundle: nil)
+        weightViewController.collector = self
         self.present(weightViewController, animated: true, completion: nil)
     }
     
@@ -126,12 +129,24 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
 }
 
+extension TableViewController: LengthCollector {
+    
+    func didSetNewLength(type: Int, value: Double) {
+        if let rowNumber = UserDetailsViewPresenter.allItems.firstIndex(where: {$0 == .heightWeight}) {
+            let indexPathToReload = IndexPath(row: rowNumber, section: 0)
+            self.tableView.reloadRows(at: [indexPathToReload], with: .fade)
+        }
+    }
+    
+}
+
 // MARK: - Navigation extensions
 
 extension TableViewController : DOBCellToCalenderViewController{
     
     func navigateFromDOBCellToCalenderView(_ calenderViewController: CalenderViewController) {
-        self.navigationController?.pushViewController(calenderViewController, animated: true)
+//        self.navigationController?.pushViewController(calenderViewController, animated: true)
+        self.present(calenderViewController, animated: true, completion: nil)
     }
 }
 

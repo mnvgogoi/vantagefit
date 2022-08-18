@@ -11,7 +11,7 @@ class TableViewFooterBtn: UITableViewCell {
 
     @IBOutlet weak var continueBtn: UIButton!
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
     override func awakeFromNib() {
         super.awakeFromNib()

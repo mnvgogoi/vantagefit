@@ -27,7 +27,7 @@ class HeightSliderViewController: UIViewController {
     
     var unitConverter = UnitConverters()
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()

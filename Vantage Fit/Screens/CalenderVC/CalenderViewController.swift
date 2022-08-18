@@ -20,7 +20,7 @@ class CalenderViewController: UIViewController {
     //*
     var delegate: TableViewDOBCellDelegate?
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
     
     override func viewDidLoad() {

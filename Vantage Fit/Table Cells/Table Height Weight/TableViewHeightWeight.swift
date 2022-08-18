@@ -11,18 +11,11 @@ class TableViewHeightWeight: UITableViewCell {
     @IBOutlet weak var heightValue: UILabel!
     @IBOutlet weak var weightValue: UILabel!
     
-    let weightVC = WeightViewController()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         backgroundCard.layer.cornerRadius = 25
         backgroundCardWeight.layer.cornerRadius = 25
-        
-        //*
-        weightVC.delegate = self
-        
-        
     }
     
 
@@ -30,14 +23,19 @@ class TableViewHeightWeight: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setData(heightValue:String?, weightValue:String?) {
+        self.heightValue.text = heightValue
+        self.weightValue.text = weightValue
+    }
+    
 }
 
 //MARK: -
 
-extension TableViewHeightWeight: cardLabelChangeProtocol {
-    func changeLabel(_ data: String) {
-        print("changed")
-        weightValue.text = data
-    }
-    
-}
+//extension TableViewHeightWeight: cardLabelChangeProtocol {
+//    func changeLabel(_ data: String) {
+//        print("changed")
+//        weightValue.text = data
+//    }
+//    
+//}

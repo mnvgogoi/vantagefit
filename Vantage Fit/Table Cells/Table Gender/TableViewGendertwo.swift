@@ -24,7 +24,7 @@ class TableViewGendertwo: UITableViewCell {
     
     var genderValue = "No Value"
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
     override func awakeFromNib() {
         super.awakeFromNib()

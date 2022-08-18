@@ -12,7 +12,7 @@ class TableViewDOB: UITableViewCell {
     @IBOutlet weak var dobValueLabel: UILabel!
 
     private let calenderVC = CalenderViewController()
-    private var userVitals = UserVitals.getUserVitalsInstance()
+    private var userVitals = UserVitals.sharedInstance
     //*
     var delegate: DOBCellToCalenderViewController?
     

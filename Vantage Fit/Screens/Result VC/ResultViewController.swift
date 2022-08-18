@@ -23,7 +23,7 @@ class ResultViewController: UIViewController {
     
     
     
-    var userVitals = UserVitals.getUserVitalsInstance()
+    var userVitals = UserVitals.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
