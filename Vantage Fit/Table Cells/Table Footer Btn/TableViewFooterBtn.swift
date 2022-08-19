@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
+import GoogleSignIn
+
 
 class TableViewFooterBtn: UITableViewCell {
 
     @IBOutlet weak var continueBtn: UIButton!
     
     var userVitals = UserVitals.sharedInstance
+
+    let db = Firestore.firestore()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,16 +28,43 @@ class TableViewFooterBtn: UITableViewCell {
     }
     
     @IBAction func continueBtnPressed(_ sender: UIButton) {
-        print("----------")
-//        print(userVitals.gender ?? "defalut gender")
-//        print(userVitals.dateOfBirth ?? "defalut dob")
-//        print(userVitals.height ?? "defalut height")
-//        print(userVitals.weight ?? "defalut weight")
-//
-//        print(userVitals.weightUnit ?? "def weight unit")
-//        print(userVitals.heightUnit ?? "def height unit")
-        
-        
+        saveToFirestore()
     }
+    
+    func saveToFirestore(){
+       
+        
+        // Add a new document with a generated ID
+        var ref: DocumentReference? = nil
+        ref = db.collection("users").addDocument(data: [
+            "first": "Ada",
+            "last": "Lovelace",
+            "born": 1815
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+    }
+    
+    func getUser(){
+        
+        if let currentUser = Auth.auth().currentUser{
+            print(currentUser.displayName ?? "no user")
+            print(currentUser.email ?? "no email")
+            
+            //*
+//            let user: GIDGoogleUser = GIDSignIn.sharedInstance()!.currentUser
+//            let fullName = user.profile.name
+//            let email = user.profile.email
+//            print("+++++++")
+//            print(fullName)
+//            print(email)
+        }
+    }
+    
+    
     
 }

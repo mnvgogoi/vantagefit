@@ -33,10 +33,28 @@ class BaseViewController: UIViewController{
         do {
             try firebaseAuth.signOut()
             print("logout")
-            self.dismiss(animated: true)
+//            self.dismiss(animated: true)
+            navigationController?.popToRootViewController(animated: true)
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
     }
     
+}
+
+//MARK: -
+
+extension UIViewController {
+    //present in full scene mode
+    func presentInFullScreen(_ viewController: UIViewController,
+                             animated: Bool,
+                             completion: (() -> Void)? = nil) {
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: animated, completion: completion)
+    }
+    
+    // navigate to a view contoller
+    func navigate(_ viewController: UIViewController){
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

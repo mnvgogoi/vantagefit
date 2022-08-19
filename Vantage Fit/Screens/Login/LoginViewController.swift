@@ -8,6 +8,7 @@
 import UIKit
 import GoogleSignIn
 import FirebaseAuth
+import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     
@@ -46,13 +47,12 @@ class LoginViewController: UIViewController {
 extension LoginViewController: GIDSignInDelegate{
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
-        guard let userEmail = user?.profile.email else {
+        guard let userEmail = user.profile.email else {
             return print("no email")
         }
-        
+
         print("\(userEmail)")
         
-        //**
         if let error = error {
             print(error.localizedDescription)
             return
@@ -69,28 +69,14 @@ extension LoginViewController: GIDSignInDelegate{
                 
                 let tableView = HomeViewController(nibName: "HomeViewController", bundle: nil)
                 self.navigate(tableView)
-                // self.presentInFullScreen(tableView, animated: true)
-                
-                // self.navigationController?.popToRootViewController(animated: true)
-                
-                
             }
         }
     }
     
-}
-
-//MARK: -
-
-extension UIViewController {
-    func presentInFullScreen(_ viewController: UIViewController,
-                             animated: Bool,
-                             completion: (() -> Void)? = nil) {
-        viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: animated, completion: completion)
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        print("when google user disconected")
     }
     
-    func navigate(_ viewController: UIViewController){
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
 }
+
+
