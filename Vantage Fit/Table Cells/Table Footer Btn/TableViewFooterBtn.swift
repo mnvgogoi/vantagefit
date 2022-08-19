@@ -28,7 +28,7 @@ class TableViewFooterBtn: UITableViewCell {
     }
     
     @IBAction func continueBtnPressed(_ sender: UIButton) {
-        saveToFirestore()
+//        saveToFirestore()
     }
     
     func saveToFirestore(){

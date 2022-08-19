@@ -44,7 +44,10 @@ class WeightViewController: UIViewController {
         slider.minimumValue = 30
         slider.maximumValue = 200
         
-        sliderValue.text = String(format: "%.f", currentSliderWeightValue) + " \(measurement)"
+        if let userWeight = userVitals.weight{
+            slider.value = Float(userWeight)
+            sliderValue.text = String(format: "%.f", userWeight) + " \(measurement)"
+        }
 
     }
     

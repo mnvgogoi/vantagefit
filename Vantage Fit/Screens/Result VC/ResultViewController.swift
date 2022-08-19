@@ -29,11 +29,11 @@ class ResultViewController: BaseViewController {
         super.viewDidLoad()
         backgroundCard.layer.cornerRadius = 20
         
-        dobValueLabel.text = "\(userVitals.dateOfBirth ?? "ddmmyyyy")"
+        dobValueLabel.text = "\(userVitals.dateOfBirth ?? "dd-mm-yyyy")"
 
         genderValuelabel.text = "\(userVitals.gender ?? Gender.Unspecified)"
-        heightValueLabel.text = "\(userVitals.height ?? 0.0) cm"
-        weightValueLabel.text = "\(userVitals.weight ?? 0.0) kg"
+        heightValueLabel.text = "\(userVitals.heightDisplayValue ?? "0 cm")"
+        weightValueLabel.text = "\(userVitals.weightDisplayValue ?? "0 kg")"
     }
 
 

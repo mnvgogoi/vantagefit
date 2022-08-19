@@ -34,7 +34,10 @@ class HeightSliderViewController: UIViewController {
         slider.minimumValue = 125
         slider.maximumValue = 250
         
-        sliderValue.text = String(format: "%.f", currentSliderHeightValue) + " \(measurement)"
+        if let userHeight = userVitals.height{
+            slider.value = Float(userHeight)
+            sliderValue.text = String(format: "%.f", userHeight) + " \(measurement)"
+        }
         
         
     }

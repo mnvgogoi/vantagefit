@@ -33,8 +33,13 @@ class CalenderViewController: UIViewController {
         dateFormatter.dateFormat = "dd.MM.yy"
         datePicker.datePickerMode = .date
 
-        userVitals.dateOfBirth = dateFormatter.string(from: datePicker.date)
+//        userVitals.dateOfBirth = dateFormatter.string(from: datePicker.date)
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 0, to: Date())
+        
+        if let userDob = userVitals.dateOfBirth{
+            datePicker.date = dateFormatter.date(from:userDob) ?? Date()
+        }
+    
         
 //        navigationController?.pushViewController(tableCellDOB, animated: true)
 //        present(tableCellDOB, animated: true, completion: nil)
