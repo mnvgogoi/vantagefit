@@ -1,9 +1,8 @@
 //
-//  ViewController.swift
-//  Vantage Fit
 //
-//  Created by Vantage Circle on 03/08/22.
 //
+//
+// storyboard not in used
 
 import UIKit
 

@@ -5,7 +5,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -76,9 +76,8 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
         case .dob:
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewDOB", for: indexPath) as? TableViewDOB
             detailsCell?.selectionStyle = .none
-//            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
-            detailsCell?.delegate = self
-            
+            detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
+            detailsCell?.setData(dobValue: UserVitals.sharedInstance.dateOfBirth)
             return detailsCell ?? UITableViewCell()
             
         case .heightWeight:
@@ -106,18 +105,21 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     
     // MARK: - functions
     
-//    @objc func calenderPopUP(sender : UIButton){
-//        let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
-//        self.present(calenderViewController, animated: true, completion: nil)
-//    }
+    @objc func calenderPopUP(sender : UIButton){
+        let calenderViewController = CalenderViewController(nibName: "CalenderViewController", bundle: nil)
+        calenderViewController.dobcollector = self
+        self.present(calenderViewController, animated: true, completion: nil)
+    }
     
     @objc func displaySlider() {
         let heightSliderViewController = HeightSliderViewController(nibName: "HeightSliderViewController", bundle: nil)
+        heightSliderViewController.collector = self
         self.present(heightSliderViewController, animated: true, completion: nil)
     }
     
     @objc func displayWeightSlider() {
         let weightViewController = WeightViewController(nibName: "WeightViewController", bundle: nil)
+        //*
         weightViewController.collector = self
         self.present(weightViewController, animated: true, completion: nil)
     }
@@ -128,6 +130,8 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
 }
+
+// MARK: - Custom extensions
 
 extension TableViewController: LengthCollector {
     
@@ -140,14 +144,16 @@ extension TableViewController: LengthCollector {
     
 }
 
-// MARK: - Navigation extensions
-
-extension TableViewController : DOBCellToCalenderViewController{
-    
-    func navigateFromDOBCellToCalenderView(_ calenderViewController: CalenderViewController) {
-//        self.navigationController?.pushViewController(calenderViewController, animated: true)
-        self.present(calenderViewController, animated: true, completion: nil)
+extension TableViewController: DobCollector{
+    func didSetDob(value: String) {
+        if let rowNumber = UserDetailsViewPresenter.allItems.firstIndex(where: {$0 == .dob}) {
+            let indexPathToReload = IndexPath(row: rowNumber, section: 0)
+            self.tableView.reloadRows(at: [indexPathToReload], with: .fade)
+        }
     }
+    
+    
 }
+
 
 

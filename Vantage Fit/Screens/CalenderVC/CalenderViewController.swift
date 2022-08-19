@@ -7,6 +7,9 @@
 
 import UIKit
 
+protocol DobCollector {
+    func didSetDob(value:String)
+}
 
 class CalenderViewController: UIViewController {
     
@@ -17,8 +20,7 @@ class CalenderViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
     
-    //*
-    var delegate: TableViewDOBCellDelegate?
+    var dobcollector: DobCollector?
     
     var userVitals = UserVitals.sharedInstance
     
@@ -52,8 +54,13 @@ class CalenderViewController: UIViewController {
     
     
     @IBAction func setDatePressed(_ sender: UIButton) {
-        delegate?.didSetDOB()
-        navigationController?.popViewController(animated: true)
+        //*
+        if let dobCollector = self.dobcollector{
+            if let dob = userVitals.dateOfBirth{
+                dobCollector.didSetDob(value: dob)
+            }
+        }
+
         dismiss(animated: true,completion: nil)
     }
 }

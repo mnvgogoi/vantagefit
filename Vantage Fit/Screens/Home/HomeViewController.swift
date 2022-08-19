@@ -8,31 +8,30 @@
 import UIKit
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
-    
+class HomeViewController: BaseViewController {
     
     @IBOutlet weak var manualDataInsertBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        navigationItem.hidesBackButton = true
+                navigationItem.hidesBackButton = true
         
-        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutUser))
-        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
+//        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutUser))
+//        self.navigationItem.rightBarButtonItem  = logoutBarButtonItem
         
     }
     
-    @objc func logoutUser(){
-         print("clicked")
-        let firebaseAuth = Auth.auth()
-        do {
-          try firebaseAuth.signOut()
-            print("logout")
-            self.dismiss(animated: true)
-        } catch let signOutError as NSError {
-          print ("Error signing out: %@", signOutError)
-        }
-    }
+//    @objc func logoutUser(){
+//         print("clicked")
+//        let firebaseAuth = Auth.auth()
+//        do {
+//          try firebaseAuth.signOut()
+//            print("logout")
+//            self.dismiss(animated: true)
+//        } catch let signOutError as NSError {
+//          print ("Error signing out: %@", signOutError)
+//        }
+//    }
     
 
     
@@ -53,4 +52,5 @@ class HomeViewController: UIViewController {
     }
    
 }
+
 

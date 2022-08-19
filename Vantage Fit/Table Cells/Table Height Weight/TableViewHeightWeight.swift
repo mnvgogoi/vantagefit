@@ -30,12 +30,4 @@ class TableViewHeightWeight: UITableViewCell {
     
 }
 
-//MARK: -
 
-//extension TableViewHeightWeight: cardLabelChangeProtocol {
-//    func changeLabel(_ data: String) {
-//        print("changed")
-//        weightValue.text = data
-//    }
-//    
-//}

@@ -13,8 +13,6 @@ class TableViewDOB: UITableViewCell {
 
     private let calenderVC = CalenderViewController()
     private var userVitals = UserVitals.sharedInstance
-    //*
-    var delegate: DOBCellToCalenderViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,25 +24,20 @@ class TableViewDOB: UITableViewCell {
         calenderBtn.layer.borderColor = UIColor.white.cgColor
         
         dobValueLabel.text = "dd-mm-yy"
-        
-        calenderVC.delegate = self
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
+    
     @IBAction func calenderBtnPressed(_ sender: UIButton) {
-        delegate?.navigateFromDOBCellToCalenderView(calenderVC)
+        print("calender")
     }
-}
-
-//MARK: -
-
-extension TableViewDOB: TableViewDOBCellDelegate{
     
-    func didSetDOB() {
-        dobValueLabel.text = userVitals.dateOfBirth
+    func setData(dobValue:String?) {
+        self.dobValueLabel.text = dobValue
     }
     
 }
+

@@ -6,7 +6,7 @@ target 'Vantage Fit' do
   use_frameworks!
 
 pod 'FirebaseAuth'
-#pod 'GoogleSignIn'
+pod 'Firebase/Firestore'
 pod 'FirebaseCore'
 pod 'GoogleSignIn', '~> 5.0.2'
 

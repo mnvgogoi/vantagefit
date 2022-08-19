@@ -25,13 +25,13 @@ class UserVitals {
     
     var heightDisplayValue:String? {
         if let height = height {
-            return "\(height)"
+            return "\(String(format: "%.0f", height)) cm"
         } else { return nil }
     }
     
     var weightDisplayValue:String? {
         if let weight = weight {
-            return "\(weight)"
+            return "\(String(format: "%.0f", weight)) kg"
         } else { return nil }
     }
     
@@ -46,6 +46,4 @@ class UserVitals {
     
 }
 
-protocol TableViewDOBCellDelegate {
-    func didSetDOB()
-}
+

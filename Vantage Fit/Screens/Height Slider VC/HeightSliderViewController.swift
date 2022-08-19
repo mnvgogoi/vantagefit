@@ -1,8 +1,5 @@
 //
-//  HeightSliderViewController.swift
-//  Vantage Fit
-//
-//  Created by Vantage Circle on 10/08/22.
+// using LengthCollector from WeightVC
 //
 
 import UIKit
@@ -17,8 +14,7 @@ class HeightSliderViewController: UIViewController {
     @IBOutlet weak var setValueBtn: UIButton!
     @IBOutlet weak var heightFeetInchLabel: UILabel!
     
-    
-    
+
     //--initial slider value
     var currentSliderHeightValue: Double = 125
     var measurement = MeasurementUnits.cm
@@ -28,6 +24,9 @@ class HeightSliderViewController: UIViewController {
     var unitConverter = UnitConverters()
     
     var userVitals = UserVitals.sharedInstance
+    
+    //* instance of LengthCollector Protocol
+    var collector: LengthCollector?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +53,7 @@ class HeightSliderViewController: UIViewController {
     
     
     @IBAction func cancelBtnPressed(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+//        navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
     }
     
@@ -67,10 +66,17 @@ class HeightSliderViewController: UIViewController {
         userVitals.height = finalHeight
         userVitals.heightUnit = MeasurementUnits.cm
         
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true,completion: nil)
+        //*
+        if let heightCollector = self.collector{
+            heightCollector.didSetNewLength(type: LengthUnit.Height.rawValue, value: finalHeight)
+        }
         
+//        navigationController?.popViewController(animated: true)
+        dismiss(animated: true,completion: nil)
+      
     }
 }
+
+
 
 

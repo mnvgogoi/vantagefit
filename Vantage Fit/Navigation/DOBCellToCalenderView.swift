@@ -8,6 +8,6 @@
 import Foundation
 
 
-protocol DOBCellToCalenderViewController {
-    func navigateFromDOBCellToCalenderView(_ calenderViewController : CalenderViewController)
-}
+//protocol DOBCellToCalenderViewController {
+//    func navigateFromDOBCellToCalenderView(_ calenderViewController : CalenderViewController)
+//}

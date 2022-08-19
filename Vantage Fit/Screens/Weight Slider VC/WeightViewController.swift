@@ -58,7 +58,7 @@ class WeightViewController: UIViewController {
     }
     
     @IBAction func cancelBtnPressed(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+//        navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
     }
     
@@ -72,16 +72,11 @@ class WeightViewController: UIViewController {
         userVitals.weightUnit = MeasurementUnits.kg
         
         //*
-//        if let userWeight = userVitals.weight {
-//            print(userWeight)
-//            if let textDelegate = self.delegate{
-//                print("dobDelegate---")
-//                textDelegate.changeLabel(String(finalWeight))
-//            }
-//
-//        }
-        self.collector?.didSetNewLength(type: LengthUnit.Weight.rawValue, value: finalWeight)
-        navigationController?.popViewController(animated: true)
+        if let weightCollector = self.collector{
+            weightCollector.didSetNewLength(type: LengthUnit.Weight.rawValue, value: finalWeight)
+        }
+        
+//        navigationController?.popViewController(animated: true)
         dismiss(animated: true,completion: nil)
 
         

@@ -46,6 +46,7 @@
 		52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C428A4C38B00C632F6 /* UserVitals.swift */; };
 		52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C228C728A4CB9C00C632F6 /* Gender.swift */; };
 		52C6020628ACAA9700FB369F /* DOBCellToCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6020528ACAA9700FB369F /* DOBCellToCalenderView.swift */; };
+		52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA7ECA28AE57FD005BD91B /* BaseViewController.swift */; };
 		52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */; };
 		52CD2A95289CF627006CE4AC /* TableViewGendertwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */; };
 		52E68A3228ACC57500E26740 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E68A3128ACC57500E26740 /* GoogleService-Info.plist */; };
@@ -121,6 +122,7 @@
 		52C228C428A4C38B00C632F6 /* UserVitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVitals.swift; sourceTree = "<group>"; };
 		52C228C728A4CB9C00C632F6 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		52C6020528ACAA9700FB369F /* DOBCellToCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBCellToCalenderView.swift; sourceTree = "<group>"; };
+		52CA7ECA28AE57FD005BD91B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		52CD2A92289CF627006CE4AC /* TableViewGendertwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewGendertwo.swift; sourceTree = "<group>"; };
 		52CD2A93289CF627006CE4AC /* TableViewGendertwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewGendertwo.xib; sourceTree = "<group>"; };
 		52E68A3128ACC57500E26740 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				52C228C628A4CB8900C632F6 /* Enums */,
 				52C228C428A4C38B00C632F6 /* UserVitals.swift */,
 				529A840828AB7A13005D605F /* UserDetailsViewPresenter.swift */,
+				52CA7ECA28AE57FD005BD91B /* BaseViewController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -741,6 +744,7 @@
 				52C6020628ACAA9700FB369F /* DOBCellToCalenderView.swift in Sources */,
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
+				52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
 				529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */,
 				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,
