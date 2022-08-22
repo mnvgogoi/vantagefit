@@ -7,6 +7,7 @@ target 'Vantage Fit' do
 
 pod 'FirebaseAuth'
 pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
 pod 'FirebaseCore'
 pod 'GoogleSignIn', '~> 5.0.2'
 

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         _ = UserVitals.sharedInstance
+        _ = FirestoreDB.firestoreDBSharedInstance
         //        let user = Auth.auth().currentUser
         //        if user?.uid == nil {
         //        //Show Login Screen

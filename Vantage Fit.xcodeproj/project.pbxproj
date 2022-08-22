@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAD28B35A7C00BFD799 /* UserCreds.swift */; };
+		5269CFB028B35AAB00BFD799 /* FirestoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */; };
 		526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CAAD628A80FE700125A00 /* UnitConverters.swift */; };
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
 		5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285262628A51C7400F742D1 /* MeasurementUnits.swift */; };
@@ -79,6 +81,8 @@
 		0B3EDD3B2FFC44205EE5E73E /* Pods-Vantage FitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage FitTests.debug.xcconfig"; path = "Target Support Files/Pods-Vantage FitTests/Pods-Vantage FitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_FitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5269CFAD28B35A7C00BFD799 /* UserCreds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreds.swift; sourceTree = "<group>"; };
+		5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDB.swift; sourceTree = "<group>"; };
 		526CAAD628A80FE700125A00 /* UnitConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverters.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
@@ -163,6 +167,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5269CFAB28B35A4300BFD799 /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				5269CFAD28B35A7C00BFD799 /* UserCreds.swift */,
+			);
+			path = UserAuth;
+			sourceTree = "<group>";
+		};
+		5269CFAC28B35A4D00BFD799 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		526CAAD528A80FC600125A00 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +350,8 @@
 		52A3DB25289A37330094671D /* Vantage Fit */ = {
 			isa = PBXGroup;
 			children = (
+				5269CFAC28B35A4D00BFD799 /* DB */,
+				5269CFAB28B35A4300BFD799 /* UserAuth */,
 				52E68A3128ACC57500E26740 /* GoogleService-Info.plist */,
 				52A3DB34289A37350094671D /* Info.plist */,
 				52A3DB26289A37330094671D /* AppDelegate.swift */,
@@ -736,6 +758,7 @@
 				5292F5A7289BD35B00221F36 /* radioBtnController.swift in Sources */,
 				52E68A3628ACC9A500E26740 /* LoginViewController.swift in Sources */,
 				52AA08E728AD034F006FD447 /* HomeViewController.swift in Sources */,
+				5269CFB028B35AAB00BFD799 /* FirestoreDB.swift in Sources */,
 				52A3DB5C289A77EA0094671D /* TableViewFooterBtn.swift in Sources */,
 				526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */,
 				52A3DB29289A37330094671D /* SceneDelegate.swift in Sources */,
@@ -746,6 +769,7 @@
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
+				5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */,
 				529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */,
 				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,
 				52CD2A94289CF627006CE4AC /* TableViewGendertwo.swift in Sources */,
@@ -927,6 +951,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vantage Fit/Info.plist";
 				INFOPLIST_KEY_NSMainNibFile = LoginViewController;

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
 class UserVitals {
     
@@ -22,6 +23,7 @@ class UserVitals {
     var dateOfBirth : String?
     var weight : Double?
     var height : Double?
+    var pullStatus : Bool = false
     
     var heightDisplayValue:String? {
         if let height = height {
@@ -41,7 +43,57 @@ class UserVitals {
     static let sharedInstance: UserVitals = UserVitals()
     
     private init() {
-        //pull from firebase
+        pullFromFirestore()
+    }
+    
+    func prepareData(_ userVitalsInstance : UserVitals) -> UserVitalsData{
+        return UserVitalsData(gender: userVitalsInstance.gender, dateOfBirth: userVitalsInstance.dateOfBirth, weight: userVitalsInstance.weight, height: userVitalsInstance.height)
+    }
+    
+    func pushToFirestore(_ userVitalsInstance : UserVitals) -> Bool{
+        var pushStatus = true
+        let db = FirestoreDB.firestoreDBSharedInstance
+        let userEmail = getUserEmail()
+        guard userEmail != nil else {
+            return false
+        }
+        let userVitalsData = prepareData(userVitalsInstance)
+        do{
+            try db.collection(DocumentBodyLabels.userVitals.rawValue).document(userEmail!).setData(from: userVitalsData)
+        }
+        catch{
+            pushStatus = false
+        }
+        
+        return pushStatus
+    }
+    
+    func pullFromFirestore(){
+        var userVitals : UserVitalsData?
+        let db = FirestoreDB.firestoreDBSharedInstance
+        let userEmail = getUserEmail()
+        guard userEmail != nil else {
+            return
+        }
+        let userVitalsDocument = db.collection(DocumentBodyLabels.userVitals.rawValue).document(userEmail!)
+        userVitalsDocument.getDocument { document, error in
+            if let document = document, document.exists {
+                    do{
+                        try userVitals = document.data(as: UserVitalsData.self)
+                        self.gender = userVitals?.gender
+                        self.dateOfBirth = userVitals?.dateOfBirth
+                        self.weight = userVitals?.weight
+                        self.height = userVitals?.height
+                        self.pullStatus = true
+                    }
+                    catch{
+                        self.pullStatus = false
+                    }
+                }
+            else{
+                self.pullStatus = false
+            }
+        }
     }
     
 }
