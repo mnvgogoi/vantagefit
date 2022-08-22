@@ -10,6 +10,7 @@ class TableViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     lazy var presenter = UserDetailsViewPresenter()
+    lazy var validator = Validator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,8 +126,15 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     @objc func displayResultVC(sender : UIButton) {
-        let resultViewController = ResultViewController(nibName: "ResultViewController", bundle: nil)
-        navigationController?.pushViewController(resultViewController, animated: true)
+        if(validator.areUserVitalsEmpty(UserVitals.sharedInstance)){
+            let resultViewController = ResultViewController(nibName: "ResultViewController", bundle: nil)
+            navigationController?.pushViewController(resultViewController, animated: true)
+        }
+        else{
+            let alert = UIAlertController(title: "Alert", message: "Vitals cannot be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
 }
