@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Gender{
+enum Gender : Codable{
     case Male,Female,Others,Unspecified
 }

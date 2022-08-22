@@ -67,8 +67,15 @@ extension LoginViewController: GIDSignInDelegate{
             } else {
                 print("Login Successful")
                 
-                let tableView = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                self.navigate(tableView)
+                var view : BaseViewController?
+                if(!UserVitals.sharedInstance.pullStatus){
+                    view = HomeViewController(nibName: "HomeViewController", bundle: nil)
+                }
+                if (UserVitals.sharedInstance.pullStatus) {
+                    view = ResultViewController(nibName: "ResultViewController", bundle: nil)
+                }
+                
+                self.navigate(view!)
             }
         }
     }
