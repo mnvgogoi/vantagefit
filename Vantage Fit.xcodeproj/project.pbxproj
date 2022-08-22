@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAD28B35A7C00BFD799 /* UserCreds.swift */; };
 		5269CFB028B35AAB00BFD799 /* FirestoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */; };
+		526AE9E228B36A5000FA70F4 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AE9E128B36A5000FA70F4 /* FloatingButton.swift */; };
 		526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CAAD628A80FE700125A00 /* UnitConverters.swift */; };
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
 		5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285262628A51C7400F742D1 /* MeasurementUnits.swift */; };
@@ -83,6 +84,7 @@
 		39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_FitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5269CFAD28B35A7C00BFD799 /* UserCreds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreds.swift; sourceTree = "<group>"; };
 		5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDB.swift; sourceTree = "<group>"; };
+		526AE9E128B36A5000FA70F4 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		526CAAD628A80FE700125A00 /* UnitConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverters.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				5292F5A6289BD35B00221F36 /* radioBtnController.swift */,
 				5271C7B728A225C800278C68 /* Global.swift */,
+				526AE9E128B36A5000FA70F4 /* FloatingButton.swift */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
+				526AE9E228B36A5000FA70F4 /* FloatingButton.swift in Sources */,
 				5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */,
 				529A840928AB7A13005D605F /* UserDetailsViewPresenter.swift in Sources */,
 				5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */,

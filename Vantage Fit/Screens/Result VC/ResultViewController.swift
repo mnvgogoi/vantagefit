@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ResultViewController: BaseViewController {
 
@@ -25,16 +26,36 @@ class ResultViewController: BaseViewController {
     
     var userVitals = UserVitals.sharedInstance
     
+   var myFloatingBtn = FloatingButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundCard.layer.cornerRadius = 20
+        navigationItem.hidesBackButton = true
+        
+        if let currentUser = Auth.auth().currentUser{
+            welcomeLabel.text = "Welcome, \(currentUser.displayName ?? "User")"
+        }
         
         dobValueLabel.text = "\(userVitals.dateOfBirth ?? "dd-mm-yyyy")"
 
         genderValuelabel.text = "\(userVitals.gender ?? Gender.Unspecified)"
         heightValueLabel.text = "\(userVitals.heightDisplayValue ?? "0 cm")"
         weightValueLabel.text = "\(userVitals.weightDisplayValue ?? "0 kg")"
+        myFloatingBtn.floatingButton()
+        myFloatingBtn.btn.addTarget(self,action: #selector(self.goToTableViewController), for: .touchUpInside)
+        
     }
-
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        myFloatingBtn.btn.removeFromSuperview()
+    }
+    
+    @objc func goToTableViewController(_ button: UIButton) {
+        print("button tapped")
+        navigationController?.pushViewController(HomeViewController(), animated: true)
+    }
 }
+
+
