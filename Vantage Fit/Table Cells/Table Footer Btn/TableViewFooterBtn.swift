@@ -13,6 +13,7 @@ class TableViewFooterBtn: UITableViewCell {
     @IBOutlet weak var continueBtn: UIButton!
     
     var userVitals = UserVitals.sharedInstance
+    lazy var validator = Validator()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +24,9 @@ class TableViewFooterBtn: UITableViewCell {
     }
     
     @IBAction func continueBtnPressed(_ sender: UIButton) {
-        userVitals.pushToFirestore(userVitals)
+        if(validator.areUserVitalsEmpty(userVitals)){
+            userVitals.pushToFirestore(userVitals)
+        }
     }
     
     
