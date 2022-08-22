@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func googleBtnTapped(_ sender: UIButton) {
-        print("googleBtnTapped")
+        print("google signout BtnTapped")
         //        GIDSignIn.sharedInstance().signOut()
     }
     
