@@ -23,7 +23,8 @@ class TableViewDOB: UITableViewCell {
         calenderBtn.layer.borderWidth = 3
         calenderBtn.layer.borderColor = UIColor.white.cgColor
         
-        dobValueLabel.text = "dd-mm-yy"
+        dobValueLabel.text = HomeViewControllerStrings.dobFormatString.rawValue.localize()
+        self.dobLabel.text = HomeViewControllerStrings.dobString.rawValue.localize()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

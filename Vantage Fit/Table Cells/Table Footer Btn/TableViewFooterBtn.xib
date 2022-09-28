@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,19 +18,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9q-hj-Qwt">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9q-hj-Qwt">
                         <rect key="frame" x="20" y="6.5" width="302" height="62"/>
+                        <color key="backgroundColor" red="0.87450981139999995" green="0.36470589040000001" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="62" id="I0Z-Oz-XKh"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Continue">
-                            <backgroundConfiguration key="background" cornerRadius="20">
-                                <color key="backgroundColor" red="0.76030445099999999" green="0.23269546029999999" blue="0.26848024129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </backgroundConfiguration>
-                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                        </buttonConfiguration>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Continue">
+                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                        </state>
                         <connections>
                             <action selector="continueBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VJF-51-LQJ"/>
                         </connections>
@@ -46,7 +45,7 @@
             <connections>
                 <outlet property="continueBtn" destination="h9q-hj-Qwt" id="cuX-bc-GwB"/>
             </connections>
-            <point key="canvasLocation" x="168.11594202898553" y="75.334821428571431"/>
+            <point key="canvasLocation" x="-588" y="46"/>
         </tableViewCell>
     </objects>
     <resources>

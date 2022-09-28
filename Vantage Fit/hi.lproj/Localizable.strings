@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Vantage Fit
+
+  Created by Vantage Circle on 26/09/22.
+  
+*/
+"homeView.headerLabel" = "चलिए आपका डेटा सेट करें";
+"loginView.autoDataFetchBtn" = "डेटा स्वचालित रूप से प्राप्त करें";
+"loginView.manualDataEntryBtn" = "मैन्युअल रूप से डेटा डालें";
+"homeView.continueBtn" = "जारी रखें";
+"gender" = "लिंग";
+"resultView.welcome" = "नमस्ते";
+"homeView.gender.headerLabel" = "मैं एक";
+"homeView.gender.maleCategory" = "पुरुष";
+"homeView.gender.femaleCategory" = "महिला";
+"homeView.gender.othersCategory" = "अन्य";
+"homeView.gender.unspecifiedCategory" = "मैं खुलासा नहीं करना चाहता/चाहती";
+"dateOfBirth" = "जन्म की तिथि";
+"dobFormat" = "दिनांक-महीना-बर्ष";
+"height" = "कद";
+"weight" = "वजन";
+"setBtn" = "सेट करें";
+"loginView.orLabel" = "या";
+"cancelBtn" = "रद्द करें";
+"loginView.welcomelabel" = "स्वागत हे";
+"resultView.editVitalsBtn" = "संपादित करें";
+

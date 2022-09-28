@@ -17,6 +17,8 @@ class TableViewFooterBtn: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let btnText = HomeViewControllerStrings.continueBtnString.rawValue.localize()
+        self.continueBtn.setTitle(btnText, for: .normal)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

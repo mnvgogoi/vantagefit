@@ -11,9 +11,14 @@ import FirebaseAuth
 class HomeViewController: BaseViewController {
     
     @IBOutlet weak var manualDataInsertBtn: UIButton!
+    @IBOutlet weak var autoInsertDataBtn : UIButton!
+    @IBOutlet weak var separatorLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.manualDataInsertBtn.setTitle(WelcomeControllerStrings.manualDataFetchBtnString.rawValue.localize(), for: .normal)
+        self.autoInsertDataBtn.setTitle(WelcomeControllerStrings.autoFetchDataBtnString.rawValue.localize(), for: .normal)
+        self.separatorLabel.text = WelcomeControllerStrings.separatorString.rawValue.localize()
                 navigationItem.hidesBackButton = true
         
 //        let logoutBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutUser))

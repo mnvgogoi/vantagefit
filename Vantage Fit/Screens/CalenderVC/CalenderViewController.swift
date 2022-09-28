@@ -27,6 +27,8 @@ class CalenderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setDateBtn.setTitle(DobViewControllerStrings.setBtnString.rawValue.localize(), for: .normal)
+        self.cancelButton.setTitle(DobViewControllerStrings.cancelBtnString.rawValue.localize().localize(), for: .normal)
         popUpCard.layer.cornerRadius = 20
         datePicker.backgroundColor = .white
         

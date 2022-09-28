@@ -14,9 +14,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var googleBtn: UIButton!
     @IBOutlet weak var googleSignInBtn: GIDSignInButton!
+    @IBOutlet weak var welcomeTextLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.welcomeTextLabel.text = LoginViewControllerStrings.headerString.rawValue.localize()
         googleLogin()
     }
     

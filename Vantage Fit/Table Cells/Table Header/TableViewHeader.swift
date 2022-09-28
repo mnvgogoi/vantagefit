@@ -16,7 +16,8 @@ class TableViewHeader: UITableViewCell {
         super.awakeFromNib()
         
         if let currentUser = Auth.auth().currentUser{
-            topLabel.text = "Let’s setup your data, \(currentUser.displayName ?? "User")"
+            let headerText = HomeViewControllerStrings.headerString.rawValue.localize()
+            topLabel.text = "\(headerText), \(currentUser.displayName ?? "User")"
         }
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5223049F28E43D4600C7772A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223049E28E43D4600C7772A /* Strings.swift */; };
 		5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAD28B35A7C00BFD799 /* UserCreds.swift */; };
 		5269CFB028B35AAB00BFD799 /* FirestoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */; };
 		5269CFB628B38F0100BFD799 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFB528B38F0100BFD799 /* Validator.swift */; };
@@ -14,6 +15,7 @@
 		526CAAD728A80FE700125A00 /* UnitConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CAAD628A80FE700125A00 /* UnitConverters.swift */; };
 		5271C7B828A225C800278C68 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271C7B728A225C800278C68 /* Global.swift */; };
 		5285262728A51C7400F742D1 /* MeasurementUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285262628A51C7400F742D1 /* MeasurementUnits.swift */; };
+		5287DCB128E1AEB4002B4ABB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5287DCB328E1AEB4002B4ABB /* Localizable.strings */; };
 		5290EAC828A3C1D300139DD3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EAC628A3C1D300139DD3 /* TableViewController.swift */; };
 		5290EAC928A3C1D300139DD3 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5290EAC728A3C1D300139DD3 /* TableViewController.xib */; };
 		5290EACC28A3C30100139DD3 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290EACA28A3C30100139DD3 /* CalenderViewController.swift */; };
@@ -83,6 +85,7 @@
 		0B3EDD3B2FFC44205EE5E73E /* Pods-Vantage FitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vantage FitTests.debug.xcconfig"; path = "Target Support Files/Pods-Vantage FitTests/Pods-Vantage FitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_FitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5223049E28E43D4600C7772A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		5269CFAD28B35A7C00BFD799 /* UserCreds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreds.swift; sourceTree = "<group>"; };
 		5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDB.swift; sourceTree = "<group>"; };
 		5269CFB528B38F0100BFD799 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -90,6 +93,9 @@
 		526CAAD628A80FE700125A00 /* UnitConverters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverters.swift; sourceTree = "<group>"; };
 		5271C7B728A225C800278C68 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5285262628A51C7400F742D1 /* MeasurementUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnits.swift; sourceTree = "<group>"; };
+		5287DCB028E1AE8A002B4ABB /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		5287DCB228E1AEB4002B4ABB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5287DCB428E1AEB5002B4ABB /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5290EAC628A3C1D300139DD3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5290EAC728A3C1D300139DD3 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		5290EACA28A3C30100139DD3 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
@@ -381,6 +387,8 @@
 				52A3DB2F289A37350094671D /* Assets.xcassets */,
 				52A3DB31289A37350094671D /* LaunchScreen.storyboard */,
 				5290EABE28A3798200139DD3 /* others */,
+				5287DCB328E1AEB4002B4ABB /* Localizable.strings */,
+				5223049E28E43D4600C7772A /* Strings.swift */,
 			);
 			path = "Vantage Fit";
 			sourceTree = "<group>";
@@ -564,6 +572,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = 52A3DB1A289A37330094671D;
 			productRefGroup = 52A3DB24289A37330094671D /* Products */;
@@ -595,6 +604,7 @@
 				529E673B28ACF0A400DDEC96 /* ProfileViewController.xib in Resources */,
 				5290EAD728A3C76000139DD3 /* WeightViewController.xib in Resources */,
 				5290EAD228A3C59A00139DD3 /* HeightSliderViewController.xib in Resources */,
+				5287DCB128E1AEB4002B4ABB /* Localizable.strings in Resources */,
 				52AA08E828AD034F006FD447 /* HomeViewController.xib in Resources */,
 				52A3DB30289A37350094671D /* Assets.xcassets in Resources */,
 				52A3DB2E289A37330094671D /* Main.storyboard in Resources */,
@@ -782,6 +792,7 @@
 				52C6020628ACAA9700FB369F /* DOBCellToCalenderView.swift in Sources */,
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
+				5223049F28E43D4600C7772A /* Strings.swift in Sources */,
 				52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
 				526AE9E228B36A5000FA70F4 /* FloatingButton.swift in Sources */,
@@ -825,10 +836,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5287DCB328E1AEB4002B4ABB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5287DCB228E1AEB4002B4ABB /* en */,
+				5287DCB428E1AEB5002B4ABB /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		52A3DB2C289A37330094671D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				52A3DB2D289A37330094671D /* Base */,
+				5287DCB028E1AE8A002B4ABB /* hi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -848,6 +869,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -894,7 +916,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -908,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -948,7 +971,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -966,7 +989,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				DEVELOPMENT_TEAM = V4C8F29W66;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vantage Fit/Info.plist";
@@ -980,7 +1003,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mnv.Vantage-Fit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.Vantage.Fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -996,7 +1019,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				DEVELOPMENT_TEAM = V4C8F29W66;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vantage Fit/Info.plist";
 				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
@@ -1009,7 +1032,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mnv.Vantage-Fit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.Vantage.Fit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

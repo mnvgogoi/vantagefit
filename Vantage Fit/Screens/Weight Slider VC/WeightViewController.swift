@@ -40,6 +40,9 @@ class WeightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.popUpLabel.text = WeightViewControllerStrings.weightString.rawValue.localize()
+        self.setBtn.setTitle(WeightViewControllerStrings.setBtnString.rawValue.localize(), for: .normal)
+        self.cancelBtn.setTitle(WeightViewControllerStrings.cancelBtnString.rawValue.localize(), for: .normal)
         popUpCard.layer.cornerRadius = 20
         slider.minimumValue = 30
         slider.maximumValue = 200

@@ -30,6 +30,9 @@ class HeightSliderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.popUpLabel.text = HeightViewControllerStrings.heightString.rawValue.localize()
+        self.setValueBtn.setTitle(HeightViewControllerStrings.setBtnString.rawValue.localize(), for: .normal)
+        self.cancelBtn.setTitle(HeightViewControllerStrings.cancelBtnString.rawValue.localize(), for: .normal)
         popUpBackground.layer.cornerRadius = 20
         slider.minimumValue = 125
         slider.maximumValue = 250
@@ -50,7 +53,7 @@ class HeightSliderViewController: UIViewController {
         sliderValue.text = "\(String(format: "%.f", finalHeight)) \(measurement)"
         
         let (cmToFeet, cmToInches) = unitConverter.convertCmsToFeetAndInches(finalHeight)
-        heightFeetInchLabel.text = "\(String(format: "%.f", cmToFeet)) \(MeasurementUnits.ft) \(String(format: "%.2f", cmToInches)) \(MeasurementUnits.inch)"
+        heightFeetInchLabel.text = "\(String(format: "%.f", cmToFeet)) \(MeasurementUnits.ft) \(String(format: "%.1f", cmToInches)) \(MeasurementUnits.inch)"
         
     }
     

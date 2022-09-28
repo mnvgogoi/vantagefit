@@ -132,7 +132,7 @@
                 <constraint firstItem="hlx-Xt-4Wc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yn5-kG-Dbl"/>
                 <constraint firstItem="hlx-Xt-4Wc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zE0-fh-h5p"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+            <point key="canvasLocation" x="-25" y="106"/>
         </view>
     </objects>
     <resources>

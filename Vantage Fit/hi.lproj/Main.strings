@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; configuration.title = "Manually put data"; ObjectID = "O2D-A5-tpa"; */
+"O2D-A5-tpa.configuration.title" = "Manually put data";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O2D-A5-tpa"; */
+"O2D-A5-tpa.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pG9-71-bIy"; */
+"pG9-71-bIy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "LOGO"; ObjectID = "t3q-UK-asJ"; */
+"t3q-UK-asJ.text" = "LOGO";
+
+/* Class = "UILabel"; text = "- OR -"; ObjectID = "uKx-gj-dgn"; */
+"uKx-gj-dgn.text" = "- OR -";

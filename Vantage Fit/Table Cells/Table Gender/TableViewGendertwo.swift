@@ -26,8 +26,17 @@ class TableViewGendertwo: UITableViewCell {
     
     var userVitals = UserVitals.sharedInstance
     
+    private func loadUILabels(){
+        self.genderLabel.text = HomeViewControllerStrings.genderCardHeaderString.rawValue.localize()
+        self.maleLabel.text = HomeViewControllerStrings.genderMaleString.rawValue.localize()
+        self.femaleLabel.text = HomeViewControllerStrings.genderFemaleString.rawValue.localize()
+        self.othersLabel.text = HomeViewControllerStrings.genderOthersString.rawValue.localize()
+        self.noDiscloseBtn.setTitle(HomeViewControllerStrings.genderUnspecifiedString.rawValue.localize(), for: .normal)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.loadUILabels()
         genderBackgroundImage.layer.cornerRadius = 25
         genderBackgroundImage.backgroundColor = UIColor(rgb: 0xC23B45)
         

@@ -10,12 +10,16 @@ class TableViewHeightWeight: UITableViewCell {
     @IBOutlet weak var backgroundCardWeight: UIView!
     @IBOutlet weak var heightValue: UILabel!
     @IBOutlet weak var weightValue: UILabel!
+    @IBOutlet weak var heightLabel : UILabel!
+    @IBOutlet weak var weightLabel : UILabel!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundCard.layer.cornerRadius = 25
         backgroundCardWeight.layer.cornerRadius = 25
+        self.heightLabel.text = HomeViewControllerStrings.heightString.rawValue.localize()
+        self.weightLabel.text = HomeViewControllerStrings.weightString.rawValue.localize()
     }
     
 

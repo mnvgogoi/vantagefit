@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,11 +14,13 @@
                 <outlet property="backgroundCard" destination="uxc-Js-OWE" id="G6o-2S-XXJ"/>
                 <outlet property="dobLabel" destination="U1Z-pP-gHc" id="Wvl-Ps-YTR"/>
                 <outlet property="dobValueLabel" destination="oYm-ph-vJz" id="Le4-Qu-fKY"/>
+                <outlet property="editVitalsBtnLabel" destination="H4c-2N-mOP" id="dHg-xz-a3p"/>
                 <outlet property="genderLabel" destination="ncj-mz-dKM" id="CUA-8q-eU9"/>
                 <outlet property="genderValuelabel" destination="2nI-Jj-ZAa" id="WXg-9e-dvB"/>
                 <outlet property="heightLabel" destination="Lgb-z1-A7j" id="VDQ-dR-Vqj"/>
                 <outlet property="heightValueLabel" destination="XvT-39-14Y" id="L0C-1b-8EF"/>
                 <outlet property="personImage" destination="vCb-ru-fVz" id="Lqp-h6-OlA"/>
+                <outlet property="userNameLabel" destination="b5d-eD-3qH" id="rRg-4U-tAw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weightLabel" destination="2WZ-vq-qFq" id="r9Y-Fz-Vqe"/>
                 <outlet property="weightValueLabel" destination="BHj-Du-NFM" id="qeb-CD-k20"/>
@@ -36,16 +39,22 @@
                     <rect key="frame" x="20" y="198" width="374" height="500"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="8sH-eL-NcP">
-                            <rect key="frame" x="61" y="63" width="252.5" height="374.5"/>
+                            <rect key="frame" x="61" y="27.5" width="252.5" height="445"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkL-Ym-RQt">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkL-Ym-RQt">
                                     <rect key="frame" x="25" y="0.0" width="202.5" height="33.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                     <color key="textColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-eD-3qH">
+                                    <rect key="frame" x="95.5" y="70.5" width="61.5" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                    <color key="textColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vCb-ru-fVz">
-                                    <rect key="frame" x="36" y="71" width="180" height="105"/>
+                                    <rect key="frame" x="36" y="141.5" width="180" height="105"/>
                                     <color key="tintColor" red="0.70035904650000003" green="0.2708800435" blue="0.28234031799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="106" id="ICC-1Y-str"/>
@@ -53,7 +62,7 @@
                                     </constraints>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="M3B-IF-7VR">
-                                    <rect key="frame" x="0.0" y="213.5" width="252.5" height="161"/>
+                                    <rect key="frame" x="0.0" y="284" width="252.5" height="161"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-yf-LpS" userLabel="horizontal stack">
                                             <rect key="frame" x="0.0" y="0.0" width="252.5" height="55.5"/>
@@ -149,17 +158,31 @@
                         <constraint firstItem="8sH-eL-NcP" firstAttribute="centerY" secondItem="uxc-Js-OWE" secondAttribute="centerY" id="xxA-zf-xVq"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4c-2N-mOP">
+                    <rect key="frame" x="20" y="724" width="374" height="30"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.270588249" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Edit Vitals">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="editUserVitalsBtnTapped:" destination="-1" eventType="touchUpInside" id="aSI-g7-a5e"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="uxc-Js-OWE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AmF-Ap-qxq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H4c-2N-mOP" secondAttribute="trailing" constant="20" id="F73-Zw-cNs"/>
                 <constraint firstItem="myj-yt-6JN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="J20-UC-JTG"/>
                 <constraint firstItem="myj-yt-6JN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Osp-RP-BHe"/>
+                <constraint firstItem="H4c-2N-mOP" firstAttribute="top" secondItem="uxc-Js-OWE" secondAttribute="bottom" constant="26" id="YZR-Il-fH8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uxc-Js-OWE" secondAttribute="trailing" constant="20" id="Ztf-h3-LcT"/>
                 <constraint firstAttribute="bottom" secondItem="myj-yt-6JN" secondAttribute="bottom" id="bAC-tc-Zgr"/>
                 <constraint firstItem="myj-yt-6JN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dHn-Mj-Yqy"/>
                 <constraint firstItem="uxc-Js-OWE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lEG-ET-LvK"/>
+                <constraint firstItem="H4c-2N-mOP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="lvI-4u-Is7"/>
                 <constraint firstItem="uxc-Js-OWE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="rw6-6O-Na4"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>

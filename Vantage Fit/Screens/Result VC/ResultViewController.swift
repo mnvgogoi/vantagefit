@@ -21,39 +21,38 @@ class ResultViewController: BaseViewController {
     @IBOutlet weak var weightValueLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var genderValuelabel: UILabel!
+    @IBOutlet weak var editVitalsBtnLabel : UIButton!
+    @IBOutlet weak var userNameLabel : UILabel!
     
     
     
     var userVitals = UserVitals.sharedInstance
     
-   var myFloatingBtn = FloatingButton()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dobLabel.text = ResultViewControllerStrings.dobString.rawValue.localize()
+        self.genderLabel.text = ResultViewControllerStrings.genderString.rawValue.localize()
+        self.heightLabel.text = ResultViewControllerStrings.heightString.rawValue.localize()
+        self.weightLabel.text = ResultViewControllerStrings.weightString.rawValue.localize()
+        self.editVitalsBtnLabel.setTitle(ResultViewControllerStrings.editVitalsBtnString.rawValue.localize(), for: .normal)
         backgroundCard.layer.cornerRadius = 20
         navigationItem.hidesBackButton = true
         
         if let currentUser = Auth.auth().currentUser{
-            welcomeLabel.text = "Welcome, \(currentUser.displayName ?? "User")"
+            self.welcomeLabel.text = ResultViewControllerStrings.headerString.rawValue.localize()
+            self.userNameLabel.text = currentUser.displayName ?? ""
         }
         
-        dobValueLabel.text = "\(userVitals.dateOfBirth ?? "dd-mm-yyyy")"
+        dobValueLabel.text = "\(userVitals.dateOfBirth ?? ResultViewControllerStrings.dobFormatString.rawValue)"
 
         genderValuelabel.text = "\(userVitals.gender ?? Gender.Unspecified)"
         heightValueLabel.text = "\(userVitals.heightDisplayValue ?? "0 cm")"
         weightValueLabel.text = "\(userVitals.weightDisplayValue ?? "0 kg")"
-        myFloatingBtn.floatingButton()
-        myFloatingBtn.btn.addTarget(self,action: #selector(self.goToTableViewController), for: .touchUpInside)
         
     }
+
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        myFloatingBtn.btn.removeFromSuperview()
-    }
-    
-    @objc func goToTableViewController(_ button: UIButton) {
-        print("button tapped")
+    @IBAction func editUserVitalsBtnTapped(_ sender : UIButton){
         navigationController?.pushViewController(HomeViewController(), animated: true)
     }
 }
