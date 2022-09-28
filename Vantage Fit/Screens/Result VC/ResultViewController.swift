@@ -39,7 +39,7 @@ class ResultViewController: BaseViewController {
         navigationItem.hidesBackButton = true
         
         if let currentUser = Auth.auth().currentUser{
-            self.welcomeLabel.text = ResultViewControllerStrings.headerString.rawValue.localize()
+            self.welcomeLabel.text = ResultViewControllerStrings.headerString.rawValue.localize() + ", "
             self.userNameLabel.text = currentUser.displayName ?? ""
         }
         

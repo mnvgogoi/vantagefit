@@ -17,7 +17,13 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manualDataInsertBtn.setTitle(WelcomeControllerStrings.manualDataFetchBtnString.rawValue.localize(), for: .normal)
+        self.manualDataInsertBtn.layer.cornerRadius = 15
+        let manualBtnWidthAnchor = manualDataInsertBtn.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -100)
+        manualBtnWidthAnchor.isActive = true
         self.autoInsertDataBtn.setTitle(WelcomeControllerStrings.autoFetchDataBtnString.rawValue.localize(), for: .normal)
+        self.autoInsertDataBtn.layer.cornerRadius = 15
+        let autoBtnWithAnchor = autoInsertDataBtn.widthAnchor.constraint(equalTo: self.view.widthAnchor,constant: -100)
+        autoBtnWithAnchor.isActive = true
         self.separatorLabel.text = WelcomeControllerStrings.separatorString.rawValue.localize()
                 navigationItem.hidesBackButton = true
         
