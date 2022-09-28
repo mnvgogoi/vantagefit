@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5223049F28E43D4600C7772A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223049E28E43D4600C7772A /* Strings.swift */; };
+		522304A128E44D9600C7772A /* CountryCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522304A028E44D9600C7772A /* CountryCodes.swift */; };
 		5269CFAE28B35A7C00BFD799 /* UserCreds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAD28B35A7C00BFD799 /* UserCreds.swift */; };
 		5269CFB028B35AAB00BFD799 /* FirestoreDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */; };
 		5269CFB628B38F0100BFD799 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CFB528B38F0100BFD799 /* Validator.swift */; };
@@ -86,6 +87,7 @@
 		316D7A72BF4269D4CAEB65A0 /* Pods_Vantage_Fit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_Fit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D03E2F2D2A33A6411EA835 /* Pods_Vantage_FitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vantage_FitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5223049E28E43D4600C7772A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		522304A028E44D9600C7772A /* CountryCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodes.swift; sourceTree = "<group>"; };
 		5269CFAD28B35A7C00BFD799 /* UserCreds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreds.swift; sourceTree = "<group>"; };
 		5269CFAF28B35AAB00BFD799 /* FirestoreDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreDB.swift; sourceTree = "<group>"; };
 		5269CFB528B38F0100BFD799 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			children = (
 				5290EACA28A3C30100139DD3 /* CalenderViewController.swift */,
 				5290EACB28A3C30100139DD3 /* CalenderViewController.xib */,
+				522304A028E44D9600C7772A /* CountryCodes.swift */,
 			);
 			path = CalenderVC;
 			sourceTree = "<group>";
@@ -793,6 +796,7 @@
 				52C228C528A4C38B00C632F6 /* UserVitals.swift in Sources */,
 				52C228C828A4CB9C00C632F6 /* Gender.swift in Sources */,
 				5223049F28E43D4600C7772A /* Strings.swift in Sources */,
+				522304A128E44D9600C7772A /* CountryCodes.swift in Sources */,
 				52CA7ECB28AE57FD005BD91B /* BaseViewController.swift in Sources */,
 				52A3DB64289A7DF70094671D /* TableViewHeightWeight.swift in Sources */,
 				526AE9E228B36A5000FA70F4 /* FloatingButton.swift in Sources */,

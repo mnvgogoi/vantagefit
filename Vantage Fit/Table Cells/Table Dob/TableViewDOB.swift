@@ -33,7 +33,7 @@ class TableViewDOB: UITableViewCell {
     
     
     @IBAction func calenderBtnPressed(_ sender: UIButton) {
-        print("calender")
+        
     }
     
     func setData(dobValue:String?) {

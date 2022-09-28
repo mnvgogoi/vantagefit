@@ -31,8 +31,11 @@ class CalenderViewController: UIViewController {
         self.cancelButton.setTitle(DobViewControllerStrings.cancelBtnString.rawValue.localize().localize(), for: .normal)
         popUpCard.layer.cornerRadius = 20
         datePicker.backgroundColor = .white
+        dateFormatter.dateFormat = "dd-MM-yy"
+        if NSLocale.current.regionCode == CountryCodes.US.rawValue{
+            dateFormatter.dateFormat = "MM-dd-yy"
+        }
         
-        dateFormatter.dateFormat = "dd.MM.yy"
         datePicker.datePickerMode = .date
 
 //        userVitals.dateOfBirth = dateFormatter.string(from: datePicker.date)
@@ -45,7 +48,6 @@ class CalenderViewController: UIViewController {
         
 //        navigationController?.pushViewController(tableCellDOB, animated: true)
 //        present(tableCellDOB, animated: true, completion: nil)
-        
 
     }
     
