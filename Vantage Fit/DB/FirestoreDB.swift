@@ -25,4 +25,7 @@ struct UserVitalsData : Codable{
     let dateOfBirth : String?
     let weight : Double?
     let height : Double?
+    let weightInPounds : Double?
+    let heightInFeetAndInches : [Double]?
+    let countryCode : String?
 }

@@ -53,6 +53,8 @@ class HeightSliderViewController: UIViewController {
         sliderValue.text = "\(String(format: "%.f", finalHeight)) \(measurement)"
         
         let (cmToFeet, cmToInches) = unitConverter.convertCmsToFeetAndInches(finalHeight)
+        userVitals.heightInFeetAndInches[0] = cmToFeet
+        userVitals.heightInFeetAndInches[1] = cmToInches
         heightFeetInchLabel.text = "\(String(format: "%.f", cmToFeet)) \(MeasurementUnits.ft) \(String(format: "%.1f", cmToInches)) \(MeasurementUnits.inch)"
         
     }

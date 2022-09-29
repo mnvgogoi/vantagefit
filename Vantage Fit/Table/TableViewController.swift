@@ -17,6 +17,7 @@ class TableViewController: BaseViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         
         //register cells with table
@@ -78,7 +79,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             let detailsCell = tableView.dequeueReusableCell(withIdentifier: "TableViewDOB", for: indexPath) as? TableViewDOB
             detailsCell?.selectionStyle = .none
             detailsCell?.calenderBtn.addTarget(self, action: #selector(self.calenderPopUP(sender:)), for: .touchUpInside);
-            detailsCell?.setData(dobValue: UserVitals.sharedInstance.dateOfBirth)
+            detailsCell?.setData(dobValue: UserVitals.sharedInstance.dateOfBirthValue)
             return detailsCell ?? UITableViewCell()
             
         case .heightWeight:

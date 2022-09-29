@@ -43,7 +43,7 @@ class ResultViewController: BaseViewController {
             self.userNameLabel.text = currentUser.displayName ?? ""
         }
         
-        dobValueLabel.text = "\(userVitals.dateOfBirth ?? ResultViewControllerStrings.dobFormatString.rawValue)"
+        dobValueLabel.text = "\(userVitals.dateOfBirthValue ?? ResultViewControllerStrings.dobFormatString.rawValue)"
 
         genderValuelabel.text = "\(userVitals.gender ?? Gender.Unspecified)"
         heightValueLabel.text = "\(userVitals.heightDisplayValue ?? "0 cm")"

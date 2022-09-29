@@ -60,6 +60,7 @@ class WeightViewController: UIViewController {
         sliderValue.text = "\(String(format: "%.f", finalWeight)) \(measurement)"
         
         let kiloToLbs = unitConverter.convertKgToLbs(finalWeight)
+        userVitals.weightInPounds = kiloToLbs
         weightPoundLabel.text = "\(String(format: "%.2f", kiloToLbs)) \(MeasurementUnits.lbs)"
     }
     

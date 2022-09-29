@@ -23,18 +23,55 @@ class UserVitals {
     var dateOfBirth : String?
     var weight : Double?
     var height : Double?
+    var heightInFeetAndInches = [0.0,0.0]
+    var weightInPounds : Double?
+    var countryCode : String?
     var pullStatus : Bool = false
     
+    var dateOfBirthValue : String? {
+        let currentRegion = NSLocale.current.regionCode
+        if self.countryCode == currentRegion{
+            return self.dateOfBirth
+        }
+        else{
+            var dateArray = self.dateOfBirth?.split(separator: "-")
+            let firstCompOfDateArr = dateArray![0]
+            dateArray![0] = dateArray![1]
+            dateArray![1] = firstCompOfDateArr
+            return dateArray?.joined(separator: "-")
+        }
+    }
+    
     var heightDisplayValue:String? {
-        if let height = height {
-            return "\(String(format: "%.0f", height)) cm"
-        } else { return nil }
+        switch(NSLocale.current.regionCode){
+            case CountryCodes.IN.rawValue :
+                if let height = height {
+                    return "\(String(format: "%.0f", height)) cm"
+                } else { return nil }
+            
+            case CountryCodes.US.rawValue :
+                return "\(String(format: "%.f", heightInFeetAndInches[0])) \(MeasurementUnits.ft) \(String(format: "%.1f", heightInFeetAndInches[1])) \(MeasurementUnits.inch)"
+            default :
+                return ""
+        }
     }
     
     var weightDisplayValue:String? {
-        if let weight = weight {
-            return "\(String(format: "%.0f", weight)) kg"
-        } else { return nil }
+        
+        switch(NSLocale.current.regionCode){
+            case CountryCodes.IN.rawValue :
+                if let weight = weight {
+                    return "\(String(format: "%.0f", weight)) kg"
+                } else { return nil }
+            
+            case CountryCodes.US.rawValue :
+                if let weightInPounds = weightInPounds {
+                    return "\(String(format: "%.2f", weightInPounds)) \(MeasurementUnits.lbs)"
+                }
+            default :
+                return ""
+        }
+        return ""
     }
     
     var weightUnit : MeasurementUnits?
@@ -47,7 +84,7 @@ class UserVitals {
     }
     
     func prepareData(_ userVitalsInstance : UserVitals) -> UserVitalsData{
-        return UserVitalsData(gender: userVitalsInstance.gender, dateOfBirth: userVitalsInstance.dateOfBirth, weight: userVitalsInstance.weight, height: userVitalsInstance.height)
+        return UserVitalsData(gender: userVitalsInstance.gender, dateOfBirth: userVitalsInstance.dateOfBirth, weight: userVitalsInstance.weight, height: userVitalsInstance.height,weightInPounds: userVitalsInstance.weightInPounds,heightInFeetAndInches: userVitalsInstance.heightInFeetAndInches,countryCode: NSLocale.current.regionCode)
     }
     
     func pushToFirestore(_ userVitalsInstance : UserVitals) -> Bool{
@@ -84,6 +121,9 @@ class UserVitals {
                         self.dateOfBirth = userVitals?.dateOfBirth
                         self.weight = userVitals?.weight
                         self.height = userVitals?.height
+                        self.weightInPounds = userVitals?.weightInPounds
+                        self.heightInFeetAndInches = (userVitals?.heightInFeetAndInches)!
+                        self.countryCode = userVitals?.countryCode
                         self.pullStatus = true
                     }
                     catch{
