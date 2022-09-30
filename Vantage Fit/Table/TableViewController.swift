@@ -132,7 +132,7 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate{
             navigationController?.pushViewController(resultViewController, animated: true)
         }
         else{
-            let alert = UIAlertController(title: "Alert", message: "Vitals cannot be empty", preferredStyle: .alert)
+            let alert = UIAlertController(title: HomeViewControllerStrings.alertLabelString.rawValue.localize(), message: HomeViewControllerStrings.alertMessage.rawValue.localize(), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
         }

@@ -24,6 +24,8 @@ class HeightSliderViewController: UIViewController {
     var unitConverter = UnitConverters()
     
     var userVitals = UserVitals.sharedInstance
+    var heightInFeet = 0.0
+    var heightInInch = 0.0
     
     //* instance of LengthCollector Protocol
     var collector: LengthCollector?
@@ -53,8 +55,9 @@ class HeightSliderViewController: UIViewController {
         sliderValue.text = "\(String(format: "%.f", finalHeight)) \(measurement)"
         
         let (cmToFeet, cmToInches) = unitConverter.convertCmsToFeetAndInches(finalHeight)
-        userVitals.heightInFeetAndInches[0] = cmToFeet
-        userVitals.heightInFeetAndInches[1] = cmToInches
+        
+        self.heightInFeet = cmToFeet
+        self.heightInInch = cmToInches
         heightFeetInchLabel.text = "\(String(format: "%.f", cmToFeet)) \(MeasurementUnits.ft) \(String(format: "%.1f", cmToInches)) \(MeasurementUnits.inch)"
         
     }
@@ -67,12 +70,12 @@ class HeightSliderViewController: UIViewController {
     
     
     @IBAction func setBtnPressed(_ sender: UIButton) {
-        //--
-        print("--------")
-        print(finalHeight)
         
         userVitals.height = finalHeight
         userVitals.heightUnit = MeasurementUnits.cm
+        userVitals.heightInFeetAndInches.removeAll()
+        userVitals.heightInFeetAndInches.append(self.heightInFeet)
+        userVitals.heightInFeetAndInches.append(self.heightInInch)
         
         //*
         if let heightCollector = self.collector{

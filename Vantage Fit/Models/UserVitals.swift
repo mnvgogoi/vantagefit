@@ -23,22 +23,30 @@ class UserVitals {
     var dateOfBirth : String?
     var weight : Double?
     var height : Double?
-    var heightInFeetAndInches = [0.0,0.0]
+    var heightInFeetAndInches = [Double]()
     var weightInPounds : Double?
     var countryCode : String?
     var pullStatus : Bool = false
     
     var dateOfBirthValue : String? {
         let currentRegion = NSLocale.current.regionCode
+        if self.countryCode == nil{
+            return self.dateOfBirth
+        }
         if self.countryCode == currentRegion{
             return self.dateOfBirth
         }
         else{
-            var dateArray = self.dateOfBirth?.split(separator: "-")
-            let firstCompOfDateArr = dateArray![0]
-            dateArray![0] = dateArray![1]
-            dateArray![1] = firstCompOfDateArr
-            return dateArray?.joined(separator: "-")
+            let dateArray = self.dateOfBirth?.split(separator: "-")
+            if var dateArray = dateArray{
+                let firstCompOfDateArr = dateArray[0]
+                dateArray[0] = dateArray[1]
+                dateArray[1] = firstCompOfDateArr
+                return dateArray.joined(separator: "-")
+            }
+            else {
+                return nil
+            }
         }
     }
     
@@ -50,6 +58,9 @@ class UserVitals {
                 } else { return nil }
             
             case CountryCodes.US.rawValue :
+                if (self.heightInFeetAndInches.isEmpty){
+                    return nil
+                }
                 return "\(String(format: "%.f", heightInFeetAndInches[0])) \(MeasurementUnits.ft) \(String(format: "%.1f", heightInFeetAndInches[1])) \(MeasurementUnits.inch)"
             default :
                 return ""
@@ -71,7 +82,7 @@ class UserVitals {
             default :
                 return ""
         }
-        return ""
+        return nil
     }
     
     var weightUnit : MeasurementUnits?

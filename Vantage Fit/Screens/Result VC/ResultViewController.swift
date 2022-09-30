@@ -45,7 +45,7 @@ class ResultViewController: BaseViewController {
         
         dobValueLabel.text = "\(userVitals.dateOfBirthValue ?? ResultViewControllerStrings.dobFormatString.rawValue)"
 
-        genderValuelabel.text = "\(userVitals.gender ?? Gender.Unspecified)"
+        genderValuelabel.text = "\(userVitals.gender?.rawValue.localize() ?? ResultViewControllerStrings.genderNotProvidedString.rawValue.localize())"
         heightValueLabel.text = "\(userVitals.heightDisplayValue ?? "0 cm")"
         weightValueLabel.text = "\(userVitals.weightDisplayValue ?? "0 kg")"
         

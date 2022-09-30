@@ -9,6 +9,7 @@
 "homeView.gender.maleCategory" = "Male";
 "homeView.gender.femaleCategory" = "Female";
 "homeView.gender.othersCategory" = "Others";
+"resultView.gender.unspecified" = "Unspecified";
 "homeView.gender.unspecifiedCategory" = "I don't want to disclose";
 "dateOfBirth" = "Date of Birth";
 "dobFormat" = "dd-mm-yyyy";
@@ -18,3 +19,5 @@
 "loginView.orLabel" = "Or";
 "cancelBtn" = "Cancel";
 "loginView.welcomelabel" = "Welcome Back";
+"homeView.alertLabel" = "Alert";
+"homeView.alertMessage" = "Vitals cannot be empty";

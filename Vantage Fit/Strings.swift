@@ -15,6 +15,10 @@ enum ResultViewControllerStrings : String {
     case heightString = "height"
     case weightString = "weight"
     case dobFormatString = "dobFormat"
+    case genderMaleString = "homeView.gender.maleCategory"
+    case genderFemaleString = "homeView.gender.femaleCategory"
+    case genderOthersString = "homeView.gender.othersCategory"
+    case genderNotProvidedString = "resultView.gender.unspecified"
 }
 
 enum HomeViewControllerStrings : String {
@@ -29,6 +33,8 @@ enum HomeViewControllerStrings : String {
     case weightString = "weight"
     case dobFormatString = "dobFormat"
     case continueBtnString = "homeView.continueBtn"
+    case alertLabelString = "homeView.alertLabel"
+    case alertMessage = "homeView.alertMessage"
 }
 
 enum WelcomeControllerStrings : String{

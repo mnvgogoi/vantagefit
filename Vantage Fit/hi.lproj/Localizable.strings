@@ -5,6 +5,8 @@
   Created by Vantage Circle on 26/09/22.
   
 */
+"homeView.alertLabel" = "अलर्ट";
+"homeView.alertMessage" = "ज़रूरी चीज़ें खाली नहीं हो सकतीं";
 "homeView.headerLabel" = "चलिए आपका डेटा सेट करें";
 "loginView.autoDataFetchBtn" = "डेटा स्वचालित रूप से प्राप्त करें";
 "loginView.manualDataEntryBtn" = "मैन्युअल रूप से डेटा डालें";
@@ -15,6 +17,10 @@
 "homeView.gender.maleCategory" = "पुरुष";
 "homeView.gender.femaleCategory" = "महिला";
 "homeView.gender.othersCategory" = "अन्य";
+"resultView.gender.unspecified" = "अनिर्दिष्ट";
+"Male" = "पुरुष";
+"Female" = "महिला";
+"Others" = "अन्य";
 "homeView.gender.unspecifiedCategory" = "मैं खुलासा नहीं करना चाहता/चाहती";
 "dateOfBirth" = "जन्म की तिथि";
 "dobFormat" = "दिनांक-महीना-बर्ष";
